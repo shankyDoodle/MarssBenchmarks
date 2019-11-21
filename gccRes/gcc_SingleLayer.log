@@ -1,0 +1,425 @@
+//  
+//  MARSS: Cycle Accurate Systems simulator for x86
+//  Copyright 1999-2007 Matt T. Yourst <yourst@yourst.com>
+//  Copyright 2009-2011 Avadh Patel <avadh4all@gmail.com>
+// 
+//  Git branch 'master' on date Tue Nov 12 15:52:39 2019 (HEAD: dbb348)
+//  Built Nov 14 2019 11:45:57 on BUILDHOST using gcc-6.3
+//  With 1 simulated cores
+//  Running on c6220-2.(none)
+//  
+
+Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      spec_node61.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        spec_node61.stats
+  -yamlstats    spec_node61.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     0
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      single_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      spec_node61.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        spec_node61.stats
+  -yamlstats    spec_node61.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      single_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Command received: -run 
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          enabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      spec_node61.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        spec_node61.stats
+  -yamlstats    spec_node61.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      single_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Initializing core 'base'
+ooo_#
+# Simulated Machine Configuration
+#
+---
+machine:
+  name: single_core
+  cpu_contexts: 1
+  freq: 3300000000
+  ooo_0_0:
+    type: core
+    threads: 1
+    iq_size: 64
+    phys_reg_files: 4
+    phys_reg_file_int_size: 256
+    phys_reg_file_fp_size: 256
+    phys_reg_file_st_size: 48
+    phys_reg_file_br_size: 24
+    fetch_q_size: 48
+    frontend_stages: 4
+    itlb_size: 32
+    dtlb_size: 32
+    total_FUs: 8
+    int_FUs: 2
+    fp_FUs: 2
+    ld_FUs: 2
+    st_FUs: 2
+    frontend_width: 4
+    dispatch_width: 4
+    issue_width: 4
+    writeback_width: 4
+    commit_width: 4
+    max_branch_in_flight: 24
+    per_thread:
+      rob_size: 128
+      lsq_size: 96
+  core_0_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  L1_I_0:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 2
+    pending_queue_size: 128
+    config: writeback
+  L1_D_0:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 2
+    pending_queue_size: 128
+    config: writeback
+  L2_0:
+    type: cache
+    size: 2097152
+    sets: 4096
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 128
+    config: writeback
+  MEM_0:
+    type: dram_cont
+    RAM_size: 134217728
+    number_of_banks: 64
+    latency: 165
+    latency_ns: 50
+    pending_queue_size: 128
+  p2p_core_L1_I_0:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_D_0:
+    type: interconnect
+    latency: 0
+  p2p_L1_I_0_L2_00:
+    type: interconnect
+    latency: 0
+  p2p_L2_0_L1_D_00:
+    type: interconnect
+    latency: 0
+  p2p_L2_0_MEM_00:
+    type: interconnect
+    latency: 0
+
+# End Machine Configuration
+Dumped all machine configuration
+Completed             0 cycles,             0 commits:         0 Hz,         0 insns/sec: rip 0000000000400aef
+Invalid opcode at 0x400cb6: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed        201000 cycles,         56116 commits:    996181 Hz,    278117 insns/sec: rip ffffffff8112d79c
+Completed        421000 cycles,         98455 commits:   1095910 Hz,    210907 insns/sec: rip 00000000004a9668
+Completed        628000 cycles,        143663 commits:   1029473 Hz,    224833 insns/sec: rip ffffffff8112dec1
+Completed        759000 cycles,        209385 commits:    653070 Hz,    327641 insns/sec: rip ffffffff8115e1a0
+Completed        863000 cycles,        281494 commits:    516155 Hz,    357879 insns/sec: rip ffffffff81111e80
+Completed       1012000 cycles,        346393 commits:    743006 Hz,    323626 insns/sec: rip ffffffff812a80b9
+Completed       1127000 cycles,        428676 commits:    568539 Hz,    406792 insns/sec: rip ffffffff8119f14b
+Completed       1233000 cycles,        510944 commits:    522079 Hz,    405192 insns/sec: rip 00000000004a96e4
+Completed       1338000 cycles,        585292 commits:    524009 Hz,    371038 insns/sec: rip 0000000000439d06
+Completed       1449000 cycles,        661417 commits:    552915 Hz,    379195 insns/sec: rip ffffffff81177d26
+Invalid opcode at 0xffffffffff60018a: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed       1566000 cycles,        739708 commits:    580084 Hz,    388165 insns/sec: rip 00000000004a9b3d
+Completed       1650000 cycles,        821375 commits:    418034 Hz,    406423 insns/sec: rip 00007f8fc44d7d10
+Completed       1710000 cycles,        911821 commits:    295732 Hz,    445797 insns/sec: rip 000000000048bf03
+Completed       1770000 cycles,       1002010 commits:    296095 Hz,    445076 insns/sec: rip 00007f8fc44d7c80
+Completed       1830000 cycles,       1092171 commits:    296306 Hz,    445254 insns/sec: rip 00007f8fc44d7c80
+Completed       1908000 cycles,       1179266 commits:    386630 Hz,    431712 insns/sec: rip ffffffff813a6de3
+Completed       1997000 cycles,       1272315 commits:    441183 Hz,    461255 insns/sec: rip ffffffff815e46e1
+Completed       2085000 cycles,       1364904 commits:    437679 Hz,    460503 insns/sec: rip ffffffff810608b2
+Completed       2173000 cycles,       1457120 commits:    439597 Hz,    460657 insns/sec: rip ffffffff813a6d8b
+Completed       2261000 cycles,       1549786 commits:    437421 Hz,    460614 insns/sec: rip ffffffff810d23a0
+Completed       2349000 cycles,       1642439 commits:    437459 Hz,    460590 insns/sec: rip 00007f8fc446a4db
+Completed       2432000 cycles,       1734598 commits:    413493 Hz,    459122 insns/sec: rip 00007f8fc44d7dc0
+Completed       2493000 cycles,       1825824 commits:    304420 Hz,    455263 insns/sec: rip 00007f8fc446e710
+Completed       2555000 cycles,       1922035 commits:    306518 Hz,    475652 insns/sec: rip 00007f8fc44d7cba
+Completed       2617000 cycles,       2018258 commits:    306705 Hz,    476001 insns/sec: rip 00007f8fc44d7c80
+Completed       2679000 cycles,       2114464 commits:    306457 Hz,    475532 insns/sec: rip 000000000048bf03
+Completed       2742000 cycles,       2208319 commits:    312413 Hz,    465421 insns/sec: rip 00007f8fc44c765f
+Completed       2804000 cycles,       2302492 commits:    306080 Hz,    464911 insns/sec: rip 00007f8fc446a4c6
+Completed       2866000 cycles,       2396914 commits:    305597 Hz,    465405 insns/sec: rip 00007f8fc446a503
+Completed       2928000 cycles,       2491384 commits:    305654 Hz,    465729 insns/sec: rip 00007f8fc446a7cc
+Completed       2990000 cycles,       2585951 commits:    305591 Hz,    466110 insns/sec: rip 000000000048bf07
+Invalid opcode at 0x7f8fc4c35e09: split_invalid_basic_blocks 0, first_insn_in_bb? 1
+Completed       3094000 cycles,       2666710 commits:    517638 Hz,    401961 insns/sec: rip 0000000000424742
+Completed       3186000 cycles,       2740924 commits:    456270 Hz,    368061 insns/sec: rip ffffffff81110ccf
+Completed       3270000 cycles,       2817961 commits:    414189 Hz,    379856 insns/sec: rip ffffffff81125ee6
+Completed       3348000 cycles,       2897390 commits:    386569 Hz,    393651 insns/sec: rip 000000000041c101
+Completed       3457000 cycles,       2972182 commits:    544399 Hz,    373548 insns/sec: rip ffffffff8108c1d3
+Completed       3536000 cycles,       3068467 commits:    390653 Hz,    476127 insns/sec: rip ffffffff8112d697
+Completed       3618000 cycles,       3170790 commits:    405882 Hz,    506476 insns/sec: rip ffffffff81038bb9
+Completed       3706000 cycles,       3262932 commits:    438951 Hz,    459612 insns/sec: rip ffffffff810d7ca5
+Completed       3795000 cycles,       3356384 commits:    442710 Hz,    464856 insns/sec: rip ffffffff813a6de3
+Completed       3883000 cycles,       3446915 commits:    433676 Hz,    446149 insns/sec: rip ffffffff811c3b54
+Completed       3976000 cycles,       3514507 commits:    460346 Hz,    334577 insns/sec: rip ffffffff8112c7a1
+Completed       4061000 cycles,       3595169 commits:    422760 Hz,    401184 insns/sec: rip ffffffff812e3253
+Completed       4142000 cycles,       3680601 commits:    402390 Hz,    424408 insns/sec: rip ffffffff8112b5f9
+Completed       4296000 cycles,       3750681 commits:    768382 Hz,    349664 insns/sec: rip ffffffff81014025
+Completed       4451000 cycles,       3834234 commits:    770891 Hz,    415550 insns/sec: rip ffffffff81170a7d
+Completed       4528000 cycles,       3939805 commits:    380726 Hz,    521995 insns/sec: rip ffffffff8112568c
+Completed       4634000 cycles,       4016785 commits:    526458 Hz,    382327 insns/sec: rip ffffffff815bec3b
+Completed       4760000 cycles,       4122653 commits:    629488 Hz,    528910 insns/sec: rip 00007f047cdbaae0
+Completed       4877000 cycles,       4198777 commits:    581129 Hz,    378102 insns/sec: rip ffffffff815dced9
+Completed       5003000 cycles,       4281697 commits:    629363 Hz,    414181 insns/sec: rip 00007f047cdbe8a0
+Completed       5124000 cycles,       4358548 commits:    604671 Hz,    384046 insns/sec: rip ffffffff81399390
+Invalid opcode at 0x7f047cdc7e09: split_invalid_basic_blocks 0, first_insn_in_bb? 1
+Command received: -stop 
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         enabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      spec_node61.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        spec_node61.stats
+  -yamlstats    spec_node61.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      single_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+
+Stopped after 5200959 cycles, 4413533 instructions and 10 seconds of sim time (cycle/sec: 520095 Hz, insns/sec: 441353, insns/cyc: 0.8485998447593992)
+Total Tags: single_core,c6220-2.(none),2019-11-19,total
+Stats Summary:
+user.base_machine.ooo_0_0.thread0.commit.ipc = 1.00472
+kernel.base_machine.ooo_0_0.thread0.commit.ipc = 0.776991
+total.base_machine.ooo_0_0.thread0.commit.ipc = 0.8486
