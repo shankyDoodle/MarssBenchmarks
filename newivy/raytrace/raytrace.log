@@ -1,0 +1,1076 @@
+//  
+//  MARSS: Cycle Accurate Systems simulator for x86
+//  Copyright 1999-2007 Matt T. Yourst <yourst@yourst.com>
+//  Copyright 2009-2011 Avadh Patel <avadh4all@gmail.com>
+// 
+//  Git branch 'master' on date Sun Nov 24 03:05:05 2019 (HEAD: 5c18dc)
+//  Built Nov 24 2019 05:29:08 on BUILDHOST using gcc-6.3
+//  With 4 simulated cores
+//  Running on c6220-6.(none)
+//  
+
+Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      65log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        65stats.stats
+  -yamlstats    65stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     0
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      ivybridge
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      65log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        65stats.stats
+  -yamlstats    65stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      ivybridge
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Command received: -run 
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          enabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      65log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        65stats.stats
+  -yamlstats    65stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      ivybridge
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Initializing core 'base'
+ivy_ivy_ivy_ivy_#
+# Simulated Machine Configuration
+#
+---
+machine:
+  name: ivybridge
+  cpu_contexts: 4
+  freq: 3300000000
+  ivy_0_0:
+    type: core
+    threads: 1
+    iq_size: 54
+    phys_reg_files: 4
+    phys_reg_file_int_size: 256
+    phys_reg_file_fp_size: 256
+    phys_reg_file_st_size: 36
+    phys_reg_file_br_size: 24
+    fetch_q_size: 48
+    frontend_stages: 4
+    itlb_size: 32
+    dtlb_size: 32
+    total_FUs: 8
+    int_FUs: 2
+    fp_FUs: 2
+    ld_FUs: 2
+    st_FUs: 2
+    frontend_width: 4
+    dispatch_width: 4
+    issue_width: 4
+    writeback_width: 4
+    commit_width: 4
+    max_branch_in_flight: 24
+    per_thread:
+      rob_size: 168
+      lsq_size: 100
+  ivy_1_1:
+    type: core
+    threads: 1
+    iq_size: 54
+    phys_reg_files: 4
+    phys_reg_file_int_size: 256
+    phys_reg_file_fp_size: 256
+    phys_reg_file_st_size: 36
+    phys_reg_file_br_size: 24
+    fetch_q_size: 48
+    frontend_stages: 4
+    itlb_size: 32
+    dtlb_size: 32
+    total_FUs: 8
+    int_FUs: 2
+    fp_FUs: 2
+    ld_FUs: 2
+    st_FUs: 2
+    frontend_width: 4
+    dispatch_width: 4
+    issue_width: 4
+    writeback_width: 4
+    commit_width: 4
+    max_branch_in_flight: 24
+    per_thread:
+      rob_size: 168
+      lsq_size: 100
+  ivy_2_2:
+    type: core
+    threads: 1
+    iq_size: 54
+    phys_reg_files: 4
+    phys_reg_file_int_size: 256
+    phys_reg_file_fp_size: 256
+    phys_reg_file_st_size: 36
+    phys_reg_file_br_size: 24
+    fetch_q_size: 48
+    frontend_stages: 4
+    itlb_size: 32
+    dtlb_size: 32
+    total_FUs: 8
+    int_FUs: 2
+    fp_FUs: 2
+    ld_FUs: 2
+    st_FUs: 2
+    frontend_width: 4
+    dispatch_width: 4
+    issue_width: 4
+    writeback_width: 4
+    commit_width: 4
+    max_branch_in_flight: 24
+    per_thread:
+      rob_size: 168
+      lsq_size: 100
+  ivy_3_3:
+    type: core
+    threads: 1
+    iq_size: 54
+    phys_reg_files: 4
+    phys_reg_file_int_size: 256
+    phys_reg_file_fp_size: 256
+    phys_reg_file_st_size: 36
+    phys_reg_file_br_size: 24
+    fetch_q_size: 48
+    frontend_stages: 4
+    itlb_size: 32
+    dtlb_size: 32
+    total_FUs: 8
+    int_FUs: 2
+    fp_FUs: 2
+    ld_FUs: 2
+    st_FUs: 2
+    frontend_width: 4
+    dispatch_width: 4
+    issue_width: 4
+    writeback_width: 4
+    commit_width: 4
+    max_branch_in_flight: 24
+    per_thread:
+      rob_size: 168
+      lsq_size: 100
+  core_0_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  core_1_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  core_2_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  core_3_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  L1_I_0:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L1_I_1:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L1_I_2:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L1_I_3:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L1_D_0:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L1_D_1:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L1_D_2:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L1_D_3:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 256
+    coherence: MESI
+  L2_0:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 12
+    pending_queue_size: 256
+    coherence: MESI
+  L2_1:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 12
+    pending_queue_size: 256
+    coherence: MESI
+  L2_2:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 12
+    pending_queue_size: 256
+    coherence: MESI
+  L2_3:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 12
+    pending_queue_size: 256
+    coherence: MESI
+  L3_0:
+    type: cache
+    size: 4194304
+    sets: 4096
+    ways: 16
+    line_size: 64
+    latency: 30
+    pending_queue_size: 128
+    config: writeback
+  MEM_0:
+    type: dram_cont
+    RAM_size: 134217728
+    number_of_banks: 64
+    latency: 165
+    latency_ns: 50
+    pending_queue_size: 128
+  p2p_core_L1_I_0:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_I_1:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_I_2:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_I_3:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_D_0:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_D_1:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_D_2:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_D_3:
+    type: interconnect
+    latency: 0
+  p2p_L1_I_L2_0:
+    type: interconnect
+    latency: 0
+  p2p_L1_I_L2_1:
+    type: interconnect
+    latency: 0
+  p2p_L1_I_L2_2:
+    type: interconnect
+    latency: 0
+  p2p_L1_I_L2_3:
+    type: interconnect
+    latency: 0
+  p2p_L1_D_L2_0:
+    type: interconnect
+    latency: 0
+  p2p_L1_D_L2_1:
+    type: interconnect
+    latency: 0
+  p2p_L1_D_L2_2:
+    type: interconnect
+    latency: 0
+  p2p_L1_D_L2_3:
+    type: interconnect
+    latency: 0
+  p2p_L3_0_MEM_00:
+    type: interconnect
+    latency: 0
+  split_bus_00:
+    type: interconnect
+    latency: 6
+    arbitrate_latency: 1
+    per_cont_queue_size: 16
+
+# End Machine Configuration
+Dumped all machine configuration
+Completed             0 cycles,             0 commits:         0 Hz,         0 insns/sec: rip ffffffff81013092 ffffffff81013092 0000000000400aef ffffffff81013092
+Invalid opcode at 0x400cb6: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed         61000 cycles,          6110 commits:    302204 Hz,     30270 insns/sec: rip ffffffff8128ff8b ffffffff81013091 ffffffff8100b1c2 ffffffff81013091
+Completed        124000 cycles,         14556 commits:    310528 Hz,     41630 insns/sec: rip ffffffff8116c10e ffffffff81013091 ffffffff8107ce7b ffffffff81013091
+Completed        176000 cycles,         28764 commits:    257583 Hz,     70379 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed        234000 cycles,         41596 commits:    289210 Hz,     63985 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81080046 ffffffff81013091
+Completed        287000 cycles,         56208 commits:    263143 Hz,     72548 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106bbc4 ffffffff81013091
+Completed        354000 cycles,         64083 commits:    333869 Hz,     39242 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81043ad3 ffffffff81013091
+Completed        414000 cycles,         72459 commits:    297557 Hz,     41539 insns/sec: rip ffffffff8116ed78 ffffffff81013091 ffffffff8102cb84 ffffffff81013091
+Completed        488000 cycles,         78004 commits:    365497 Hz,     27387 insns/sec: rip ffffffff811d07a7 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed        562000 cycles,         84691 commits:    367151 Hz,     33177 insns/sec: rip 0000000000438cc1 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Invalid opcode at 0xffffffff81013cc2: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed        636000 cycles,         91607 commits:    367343 Hz,     34331 insns/sec: rip 0000000000430e20 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed        697000 cycles,        102464 commits:    297505 Hz,     52951 insns/sec: rip 000000000042d7a9 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed        735000 cycles,        116430 commits:    187665 Hz,     68972 insns/sec: rip 00007f24102982f0 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed        778000 cycles,        128996 commits:    214338 Hz,     62636 insns/sec: rip 00000000004a66cd ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed        852000 cycles,        135465 commits:    367435 Hz,     32120 insns/sec: rip ffffffff8106cfe4 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed        918000 cycles,        145253 commits:    325199 Hz,     48228 insns/sec: rip ffffffff81035284 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed        980000 cycles,        153812 commits:    306616 Hz,     42327 insns/sec: rip ffffffff8106d0a9 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       1047000 cycles,        163515 commits:    334460 Hz,     48436 insns/sec: rip ffffffff8107fcf0 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       1094000 cycles,        176540 commits:    229857 Hz,     63699 insns/sec: rip ffffffff8116faf2 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       1144000 cycles,        188576 commits:    248758 Hz,     59881 insns/sec: rip ffffffff8109344b ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       1193000 cycles,        201174 commits:    244175 Hz,     62777 insns/sec: rip ffffffff8107fab5 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       1253000 cycles,        210254 commits:    294836 Hz,     44618 insns/sec: rip ffffffff813919e0 ffffffff8102176d ffffffff81013091 ffffffff81013091
+Completed       1301000 cycles,        220540 commits:    239817 Hz,     51390 insns/sec: rip ffffffff81086764 ffffffff8116c855 ffffffff81013091 ffffffff81013091
+Completed       1339000 cycles,        234146 commits:    186403 Hz,     66742 insns/sec: rip ffffffff8116fbb2 00007f24103130c8 ffffffff81013091 ffffffff81013091
+Completed       1380000 cycles,        247997 commits:    202622 Hz,     68451 insns/sec: rip 00000000004533cc ffffffff810417c0 ffffffff81013091 ffffffff81013091
+Completed       1415000 cycles,        262397 commits:    173889 Hz,     71543 insns/sec: rip ffffffff8101e801 ffffffff81067199 ffffffff81013091 ffffffff81013091
+Completed       1469000 cycles,        271331 commits:    268240 Hz,     44378 insns/sec: rip ffffffff8107bf3b ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       1515000 cycles,        285603 commits:    227262 Hz,     70510 insns/sec: rip ffffffff8116fb66 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       1557000 cycles,        299777 commits:    206129 Hz,     69563 insns/sec: rip ffffffff8116fb53 ffffffff81013091 ffffffff810519d4 ffffffff81013091
+Completed       1618000 cycles,        307840 commits:    304870 Hz,     40297 insns/sec: rip ffffffff8106ab80 ffffffff810d0590 ffffffff81013091 ffffffff81013091
+Completed       1665000 cycles,        320098 commits:    232647 Hz,     60676 insns/sec: rip ffffffff8102c460 0000000000430d80 ffffffff81013091 ffffffff81013091
+Completed       1717000 cycles,        334118 commits:    258878 Hz,     69797 insns/sec: rip ffffffff81013091 ffffffff81067199 ffffffff81013091 ffffffff81013091
+Completed       1768000 cycles,        347935 commits:    254311 Hz,     68898 insns/sec: rip ffffffff81013091 ffffffff8106d46f ffffffff81013091 ffffffff81013091
+Completed       1838000 cycles,        355986 commits:    347544 Hz,     39972 insns/sec: rip ffffffff81013091 ffffffff810ab2ed ffffffff81013091 ffffffff81013091
+Completed       1910000 cycles,        363391 commits:    359058 Hz,     36928 insns/sec: rip ffffffff81013091 ffffffff8102b820 ffffffff81013091 ffffffff81013091
+Completed       1973000 cycles,        370623 commits:    311937 Hz,     35808 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8117023c ffffffff81013091
+Completed       2047000 cycles,        378205 commits:    367945 Hz,     37699 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81165210 ffffffff81013091
+Completed       2116000 cycles,        386108 commits:    344838 Hz,     39496 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a5a ffffffff81013091
+Completed       2189000 cycles,        394591 commits:    361887 Hz,     42053 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8115c6c6 ffffffff81013091
+Completed       2254000 cycles,        402737 commits:    319666 Hz,     40061 insns/sec: rip ffffffff81156ef0 ffffffff81013091 ffffffff8102c408 ffffffff81013091
+Completed       2302000 cycles,        424258 commits:    236879 Hz,    106205 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106d231 ffffffff81013091
+Completed       2370000 cycles,        434081 commits:    336985 Hz,     48679 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc410 ffffffff81013091
+Completed       2428000 cycles,        447562 commits:    281213 Hz,     65362 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fd3b ffffffff81013091
+Completed       2482000 cycles,        468220 commits:    268815 Hz,    102836 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a2842 ffffffff81013091
+Completed       2549000 cycles,        476797 commits:    334525 Hz,     42824 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107ce7b ffffffff81013091
+Completed       2603000 cycles,        490684 commits:    268236 Hz,     68981 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107ce7b ffffffff81013091
+Completed       2660000 cycles,        507005 commits:    279312 Hz,     79976 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107ce97 ffffffff81013091
+Completed       2714000 cycles,        523825 commits:    266260 Hz,     82935 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cd8d ffffffff81013091
+Completed       2767000 cycles,        539843 commits:    263234 Hz,     79556 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cf68 ffffffff81013091
+Completed       2822000 cycles,        555236 commits:    268337 Hz,     75100 insns/sec: rip ffffffff81013091 ffffffff8102a000 ffffffff81029ce8 ffffffff81013091
+Completed       2868000 cycles,        575277 commits:    229068 Hz,     99798 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106bcc8 ffffffff81013091
+Completed       2927000 cycles,        587196 commits:    290973 Hz,     58781 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810294f3 ffffffff81013091
+Completed       2998000 cycles,        594758 commits:    352714 Hz,     37566 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107de20 ffffffff81013091
+Completed       3042000 cycles,        613092 commits:    219785 Hz,     91580 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810ef2c1 ffffffff81013091
+Completed       3115000 cycles,        620702 commits:    362626 Hz,     37802 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81166680 ffffffff81013091
+Completed       3174000 cycles,        631459 commits:    292106 Hz,     53257 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       3237000 cycles,        641896 commits:    313233 Hz,     51892 insns/sec: rip ffffffff81164b48 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       3290000 cycles,        656717 commits:    256446 Hz,     71713 insns/sec: rip ffffffff810bfe41 ffffffff8100a50b ffffffff8138f3e9 ffffffff81013091
+Completed       3341000 cycles,        672845 commits:    245980 Hz,     77787 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0c90 ffffffff81013091
+Completed       3384000 cycles,        694620 commits:    214174 Hz,    108456 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81170074 ffffffff81013091
+Completed       3423000 cycles,        713024 commits:    194809 Hz,     91929 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116bf42 ffffffff81013091
+Completed       3471000 cycles,        728061 commits:    235541 Hz,     73788 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a5a ffffffff81013091
+Completed       3521000 cycles,        743170 commits:    247811 Hz,     74883 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fc70 ffffffff81013091
+Completed       3590000 cycles,        752265 commits:    338001 Hz,     44552 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81025647 ffffffff81013091
+Completed       3646000 cycles,        767545 commits:    272683 Hz,     74403 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c959 ffffffff81013091
+Completed       3681000 cycles,        805739 commits:    171424 Hz,    187068 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c944 ffffffff81013091
+Completed       3724000 cycles,        840285 commits:    210864 Hz,    169407 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8117071b ffffffff81013091
+Completed       3778000 cycles,        854080 commits:    268117 Hz,     68493 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d04832a ffffffff81013091
+Completed       3835000 cycles,        866079 commits:    283731 Hz,     59728 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391a2e ffffffff81013091
+Completed       3885000 cycles,        883189 commits:    245569 Hz,     84033 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81078fb0 ffffffff81013091
+Completed       3939000 cycles,        899999 commits:    269926 Hz,     84027 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8115c702 ffffffff81013091
+Completed       3978000 cycles,        919575 commits:    193651 Hz,     97202 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106b15b ffffffff81013067
+Completed       4011000 cycles,        944235 commits:    162826 Hz,    121675 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81078f46 ffffffff81013091
+Completed       4055000 cycles,        963811 commits:    217041 Hz,     96563 insns/sec: rip ffffffff8102b924 ffffffff81013091 ffffffff8102d980 ffffffff81013091
+Completed       4103000 cycles,        981817 commits:    238097 Hz,     89316 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a2641 ffffffff81013091
+Completed       4164000 cycles,        992422 commits:    301485 Hz,     52414 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81051409 ffffffff81013091
+Completed       4205000 cycles,       1013421 commits:    201559 Hz,    103233 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116bb81 ffffffff81013091
+Completed       4246000 cycles,       1036384 commits:    201862 Hz,    113058 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81156c83 ffffffff81013091
+Completed       4295000 cycles,       1053774 commits:    240264 Hz,     85269 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff81158009 ffffffff81013091
+Completed       4326000 cycles,       1081548 commits:    153106 Hz,    137173 insns/sec: rip ffffffff8121d207 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       4370000 cycles,       1098519 commits:    219559 Hz,     84685 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116faf2 ffffffff81013091
+Completed       4435000 cycles,       1107516 commits:    321162 Hz,     44453 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a39 ffffffff81013091
+Completed       4496000 cycles,       1119441 commits:    301392 Hz,     58919 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc803 ffffffff81013091
+Completed       4550000 cycles,       1137127 commits:    266809 Hz,     87384 insns/sec: rip ffffffff81391420 ffffffff81013091 ffffffff81009ec0 ffffffff81013091
+Completed       4598000 cycles,       1152942 commits:    237979 Hz,     78409 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc164 ffffffff81013091
+Completed       4651000 cycles,       1167537 commits:    263828 Hz,     72652 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8138fac0 ffffffff81013091
+Completed       4717000 cycles,       1178621 commits:    326899 Hz,     54899 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8121e183 ffffffff81013091
+Completed       4771000 cycles,       1194086 commits:    266880 Hz,     76431 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81097d42 ffffffff81013091
+Completed       4824000 cycles,       1210921 commits:    253738 Hz,     80597 insns/sec: rip ffffffff811cd16c ffffffff81013091 ffffffff8116bc32 ffffffff81013091
+Completed       4861000 cycles,       1231125 commits:    180419 Hz,     98518 insns/sec: rip ffffffff811cd16c ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       4919000 cycles,       1243062 commits:    288890 Hz,     59456 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d0393c2 ffffffff81013091
+Completed       4984000 cycles,       1251107 commits:    324997 Hz,     40224 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81070676 ffffffff81013091
+Completed       5044000 cycles,       1264654 commits:    299932 Hz,     67719 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106cf29 ffffffff81013091
+Completed       5090000 cycles,       1282721 commits:    228038 Hz,     89564 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c5a3a ffffffff81013091
+Completed       5156000 cycles,       1293540 commits:    323104 Hz,     52964 insns/sec: rip ffffffff812275e4 ffffffff81013091 ffffffff8115699d ffffffff81013091
+Completed       5188000 cycles,       1318302 commits:    155688 Hz,    120473 insns/sec: rip ffffffff81391420 ffffffff81013091 ffffffff81009d00 ffffffff81013091
+Completed       5234000 cycles,       1334611 commits:    228587 Hz,     81044 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81079050 ffffffff81013091
+Completed       5300000 cycles,       1343615 commits:    329474 Hz,     44948 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03b61f ffffffff81013091
+Completed       5371000 cycles,       1353192 commits:    350747 Hz,     47311 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc286 ffffffff81013091
+Completed       5435000 cycles,       1365222 commits:    317024 Hz,     59590 insns/sec: rip ffffffff810bfe50 ffffffff81013091 ffffffff8138f1a5 ffffffff81013091
+Completed       5487000 cycles,       1383458 commits:    259576 Hz,     91031 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8110b980 ffffffff81013091
+Completed       5552000 cycles,       1394660 commits:    322063 Hz,     55503 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0d00 ffffffff81013091
+Completed       5602000 cycles,       1411127 commits:    246574 Hz,     81206 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810696fc ffffffff81013091
+Completed       5646000 cycles,       1430391 commits:    219185 Hz,     95963 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81070086 ffffffff81013091
+Completed       5716000 cycles,       1439071 commits:    347331 Hz,     43069 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81082680 ffffffff81013091
+Completed       5786000 cycles,       1447244 commits:    349168 Hz,     40767 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106d003 ffffffff81013091
+Completed       5843000 cycles,       1461698 commits:    279961 Hz,     70992 insns/sec: rip ffffffff81013091 ffffffff8101305a ffffffff81155b40 ffffffff81013091
+Completed       5903000 cycles,       1473494 commits:    292856 Hz,     57575 insns/sec: rip ffffffff8138f417 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       5954000 cycles,       1488505 commits:    250822 Hz,     73825 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811584e8 ffffffff81013091
+Completed       6004000 cycles,       1504485 commits:    247600 Hz,     79133 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a5a ffffffff81013091
+Completed       6044000 cycles,       1525906 commits:    196546 Hz,    105255 insns/sec: rip ffffffff8115646e ffffffff81013091 ffffffff81070d70 ffffffff81013091
+Completed       6097000 cycles,       1538694 commits:    260206 Hz,     62783 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106b15b ffffffff81013091
+Completed       6138000 cycles,       1557915 commits:    198819 Hz,     93207 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c5f70 ffffffff81013091
+Completed       6177000 cycles,       1580605 commits:    188349 Hz,    109580 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116bab8 ffffffff81013091
+Completed       6220000 cycles,       1601657 commits:    212904 Hz,    104233 insns/sec: rip ffffffff81391420 ffffffff81013091 ffffffff81009e20 ffffffff81013091
+Completed       6281000 cycles,       1614333 commits:    303185 Hz,     63002 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810aed02 ffffffff81013091
+Completed       6350000 cycles,       1623063 commits:    344534 Hz,     43591 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d049aa2 ffffffff81013091
+Completed       6409000 cycles,       1634590 commits:    292113 Hz,     57070 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810860c8 ffffffff81013091
+Completed       6468000 cycles,       1646272 commits:    288952 Hz,     57212 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8100bb84 ffffffff81013091
+Completed       6526000 cycles,       1656847 commits:    287017 Hz,     52331 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03c380 ffffffff81013091
+Completed       6600000 cycles,       1665654 commits:    366024 Hz,     43561 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810aa585 ffffffff81013091
+Completed       6661000 cycles,       1677313 commits:    299361 Hz,     57217 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106ce49 ffffffff81013091
+Completed       6735000 cycles,       1685624 commits:    367058 Hz,     41224 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811549a3 ffffffff81013091
+Completed       6790000 cycles,       1699658 commits:    269097 Hz,     68664 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81166183 ffffffff81013091
+Invalid opcode at 0xffffffff81009e17: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed       6821000 cycles,       1731386 commits:    154217 Hz,    157838 insns/sec: rip ffffffff8116c000 ffffffff81013091 ffffffff81050110 ffffffff81013091
+Completed       6882000 cycles,       1742460 commits:    301570 Hz,     54747 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116a1bd ffffffff81013091
+Completed       6948000 cycles,       1751698 commits:    327179 Hz,     45795 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81082742 ffffffff81013091
+Completed       7005000 cycles,       1765732 commits:    282251 Hz,     69493 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81158840 ffffffff81013091
+Completed       7066000 cycles,       1777782 commits:    300318 Hz,     59325 insns/sec: rip ffffffff811cd16c ffffffff81013091 ffffffff8102adc0 ffffffff81013091
+Completed       7117000 cycles,       1791864 commits:    254108 Hz,     70163 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8138f31f ffffffff81013091
+Completed       7164000 cycles,       1808788 commits:    234524 Hz,     84448 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc418 ffffffff81013091
+Completed       7207000 cycles,       1829807 commits:    208225 Hz,    101783 insns/sec: rip ffffffff8121d918 ffffffff81013091 ffffffff8107075a ffffffff81013091
+Completed       7248000 cycles,       1849311 commits:    199899 Hz,     95093 insns/sec: rip ffffffff811cd14c ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       7292000 cycles,       1865609 commits:    218841 Hz,     81060 insns/sec: rip ffffffff81013091 ffffffff81022381 ffffffff81013091 ffffffff81013091
+Completed       7347000 cycles,       1875937 commits:    272338 Hz,     51140 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116faf2 ffffffff81013091
+Completed       7416000 cycles,       1884389 commits:    338826 Hz,     41503 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a2670 ffffffff81013091
+Completed       7484000 cycles,       1893559 commits:    338142 Hz,     45599 insns/sec: rip ffffffff81013091 ffffffff81050125 ffffffff810840d4 ffffffff81013091
+Completed       7545000 cycles,       1902856 commits:    303206 Hz,     46211 insns/sec: rip ffffffff81013091 ffffffff81013070 ffffffff810af490 ffffffff81013091
+Completed       7596000 cycles,       1914758 commits:    252528 Hz,     58933 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106d46f ffffffff81013091
+Completed       7657000 cycles,       1925491 commits:    304943 Hz,     53655 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810ef418 ffffffff81013091
+Completed       7731000 cycles,       1934223 commits:    365619 Hz,     43143 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811555f0 ffffffff81013091
+Completed       7791000 cycles,       1949758 commits:    295280 Hz,     76453 insns/sec: rip ffffffff81391420 ffffffff81013091 ffffffff8102bdb2 ffffffff81013091
+Completed       7832000 cycles,       1975559 commits:    204937 Hz,    128965 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a5a ffffffff81013091
+Completed       7899000 cycles,       1986946 commits:    330966 Hz,     56249 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8121db53 ffffffff81013091
+Completed       7952000 cycles,       2002438 commits:    264345 Hz,     77268 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81097e00 ffffffff81013091
+Completed       8015000 cycles,       2014529 commits:    314478 Hz,     60354 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81170065 ffffffff81013091
+Completed       8060000 cycles,       2032175 commits:    223029 Hz,     87457 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8117006f ffffffff81013091
+Completed       8112000 cycles,       2048345 commits:    257623 Hz,     80110 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d04994f ffffffff81013091
+Completed       8169000 cycles,       2057716 commits:    283854 Hz,     46666 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81066cfc ffffffff81013091
+Completed       8238000 cycles,       2067188 commits:    342101 Hz,     46962 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c000 ffffffff81013091
+Completed       8293000 cycles,       2082085 commits:    271155 Hz,     73443 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116ba9c ffffffff81013091
+Completed       8352000 cycles,       2097406 commits:    292812 Hz,     76036 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8115c640 ffffffff81013091
+Completed       8387000 cycles,       2123023 commits:    172658 Hz,    126371 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fb53 ffffffff81013091
+Completed       8449000 cycles,       2133432 commits:    306966 Hz,     51535 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8139135c ffffffff81013091
+Completed       8522000 cycles,       2142430 commits:    363797 Hz,     44841 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810f32c1 ffffffff81013091
+Completed       8595000 cycles,       2152131 commits:    364448 Hz,     48431 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81078ec2 ffffffff8105011e
+Completed       8660000 cycles,       2164812 commits:    324572 Hz,     63321 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81164e80 ffffffff81013091
+Completed       8724000 cycles,       2177661 commits:    317951 Hz,     63833 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106cddd ffffffff81013091
+Completed       8772000 cycles,       2195041 commits:    232003 Hz,     84004 insns/sec: rip ffffffff81391426 ffffffff81013091 ffffffff8102add2 ffffffff81013091
+Completed       8818000 cycles,       2217777 commits:    226937 Hz,    112166 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03b662 ffffffff81013091
+Completed       8889000 cycles,       2226838 commits:    351155 Hz,     44814 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c7a3 ffffffff81013091
+Completed       8955000 cycles,       2237497 commits:    326405 Hz,     52714 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81078e50 ffffffff81013091
+Completed       9018000 cycles,       2250448 commits:    309896 Hz,     63705 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81163cf0 ffffffff81013091
+Completed       9073000 cycles,       2264489 commits:    274097 Hz,     69974 insns/sec: rip ffffffff81223180 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       9122000 cycles,       2281308 commits:    241126 Hz,     82765 insns/sec: rip ffffffff812275e4 ffffffff81013091 ffffffff8102cb9e ffffffff81013091
+Completed       9170000 cycles,       2300721 commits:    234389 Hz,     94795 insns/sec: rip ffffffff81013091 ffffffff81013070 ffffffff810c0da3 ffffffff81013091
+Completed       9215000 cycles,       2318149 commits:    223721 Hz,     86644 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c8a7 ffffffff81013091
+Completed       9274000 cycles,       2330170 commits:    292915 Hz,     59680 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391419 ffffffff81013091
+Completed       9312000 cycles,       2352419 commits:    189797 Hz,    111126 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0de3 ffffffff81013091
+Completed       9353000 cycles,       2375662 commits:    200005 Hz,    113383 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811572c1 ffffffff81013091
+Completed       9399000 cycles,       2392349 commits:    228864 Hz,     83023 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03b2c4 ffffffff81013091
+Completed       9472000 cycles,       2401491 commits:    364019 Hz,     45587 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc3e1 ffffffff81013091
+Completed       9535000 cycles,       2414044 commits:    312209 Hz,     62208 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81170067 ffffffff81013091
+Completed       9581000 cycles,       2438156 commits:    228334 Hz,    119686 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a2a5f ffffffff81013091
+Completed       9653000 cycles,       2447651 commits:    356705 Hz,     47040 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81098bbb ffffffff81013091
+Completed       9714000 cycles,       2461327 commits:    302869 Hz,     67902 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81172ceb ffffffff81013091
+Completed       9751000 cycles,       2484526 commits:    179901 Hz,    112798 insns/sec: rip ffffffff811cd16c ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed       9818000 cycles,       2495512 commits:    333252 Hz,     54643 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81081b9a ffffffff81013091
+Completed       9887000 cycles,       2504730 commits:    342931 Hz,     45813 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81082100 ffffffff81013091
+Completed       9952000 cycles,       2516107 commits:    324829 Hz,     56855 insns/sec: rip ffffffff81013091 ffffffff81013070 ffffffff8115be00 ffffffff81013091
+Start logging at level 1 in cycle 10000000
+Completed      10010000 cycles,       2532490 commits:    289807 Hz,     81860 insns/sec: rip ffffffff81391426 ffffffff81013091 ffffffff8138f31f ffffffff81013091
+Completed      10057000 cycles,       2551208 commits:    231973 Hz,     92384 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107c340 ffffffff81013091
+Completed      10121000 cycles,       2561545 commits:    316963 Hz,     51194 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a3a60 ffffffff81013091
+Completed      10193000 cycles,       2571650 commits:    358199 Hz,     50272 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a5a ffffffff81013091
+Completed      10265000 cycles,       2581929 commits:    355876 Hz,     50806 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811546c8 ffffffff81013091
+Completed      10326000 cycles,       2599932 commits:    292676 Hz,     86377 insns/sec: rip ffffffff81391420 ffffffff81013091 ffffffff81009c81 ffffffff81013091
+Completed      10366000 cycles,       2621596 commits:    196923 Hz,    106653 insns/sec: rip ffffffff8139136b ffffffff81013091 ffffffff8100bb53 ffffffff81013091
+Completed      10437000 cycles,       2632009 commits:    352992 Hz,     51770 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8115bec2 ffffffff81013091
+Completed      10479000 cycles,       2652293 commits:    209696 Hz,    101273 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8115c6e4 ffffffff81013091
+Completed      10533000 cycles,       2668497 commits:    268625 Hz,     80607 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810b70c5 ffffffff81013091
+Completed      10603000 cycles,       2677521 commits:    347814 Hz,     44838 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391487 ffffffff81013091
+Completed      10672000 cycles,       2686977 commits:    342062 Hz,     46877 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106fa00 ffffffff81013091
+Completed      10723000 cycles,       2704352 commits:    253418 Hz,     86336 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0da3 ffffffff81013091
+Completed      10782000 cycles,       2719602 commits:    294642 Hz,     76157 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff812306c3 ffffffff81013091
+Completed      10824000 cycles,       2739000 commits:    203926 Hz,     94185 insns/sec: rip ffffffff81391424 ffffffff81013091 ffffffff8102c641 ffffffff81013091
+Completed      10865000 cycles,       2762825 commits:    204186 Hz,    118652 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107be90 ffffffff81013091
+Completed      10920000 cycles,       2778329 commits:    269456 Hz,     75957 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c5df3 ffffffff81013091
+Completed      10976000 cycles,       2792680 commits:    278156 Hz,     71282 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03b8de ffffffff81013091
+Completed      11047000 cycles,       2802263 commits:    350254 Hz,     47274 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81096002 ffffffff81013091
+Completed      11118000 cycles,       2810810 commits:    354704 Hz,     42699 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810786ce ffffffff81013091
+Completed      11186000 cycles,       2820569 commits:    338067 Hz,     48517 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fb53 ffffffff81013091
+Completed      11241000 cycles,       2833035 commits:    274625 Hz,     62245 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03fa81 ffffffff81013091
+Completed      11301000 cycles,       2846000 commits:    295534 Hz,     63860 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a70 ffffffff81013091
+Completed      11379000 cycles,       2853896 commits:    388989 Hz,     39377 insns/sec: rip ffffffff810501b5 ffffffff81013091 ffffffff8110bb80 ffffffff81013091
+Completed      11441000 cycles,       2865933 commits:    307483 Hz,     59696 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81067601 ffffffff81013091
+Completed      11518000 cycles,       2873749 commits:    384222 Hz,     39001 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8121eb90 ffffffff81013091
+Completed      11579000 cycles,       2886201 commits:    303065 Hz,     61865 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d039391 ffffffff81013091
+Completed      11650000 cycles,       2895184 commits:    351611 Hz,     44486 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81081fa0 ffffffff81013091
+Completed      11719000 cycles,       2904680 commits:    343527 Hz,     47277 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fb53 ffffffff81013091
+Completed      11773000 cycles,       2917505 commits:    268889 Hz,     63861 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03b8de ffffffff81013091
+Completed      11846000 cycles,       2926664 commits:    361992 Hz,     45417 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810ec0be ffffffff81013091
+Completed      11915000 cycles,       2937940 commits:    341338 Hz,     55781 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c8be0 ffffffff81013091
+Completed      11991000 cycles,       2946555 commits:    374956 Hz,     42503 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81166138 ffffffff81013091
+Completed      12051000 cycles,       2959395 commits:    297932 Hz,     63757 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc27e ffffffff81013091
+Completed      12093000 cycles,       2986714 commits:    204381 Hz,    132940 insns/sec: rip ffffffff81391426 ffffffff81013091 ffffffff8138f31f ffffffff81013091
+Completed      12143000 cycles,       3006995 commits:    248278 Hz,    100706 insns/sec: rip ffffffff81050178 ffffffff81013091 ffffffff8100c490 ffffffff81013091
+Completed      12214000 cycles,       3016186 commits:    350607 Hz,     45386 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81084903 ffffffff81013091
+Completed      12282000 cycles,       3026674 commits:    332670 Hz,     51309 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106d003 ffffffff81013091
+Completed      12326000 cycles,       3047383 commits:    214338 Hz,    100880 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81067675 ffffffff81013091
+Completed      12390000 cycles,       3060249 commits:    310443 Hz,     62408 insns/sec: rip ffffffff8102bc25 ffffffff81013091 ffffffff81066384 ffffffff81013091
+Completed      12420000 cycles,       3089024 commits:    146865 Hz,    140868 insns/sec: rip ffffffff810c5880 ffffffff81013070 ffffffff8116c117 ffffffff81013091
+Completed      12480000 cycles,       3101733 commits:    296036 Hz,     62705 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d039dc1 ffffffff81013091
+Completed      12541000 cycles,       3112238 commits:    304573 Hz,     52451 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8100b224 ffffffff81013091
+Completed      12611000 cycles,       3122101 commits:    349824 Hz,     49290 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810989c1 ffffffff81013091
+Completed      12679000 cycles,       3132045 commits:    336914 Hz,     49268 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d039e7d ffffffff81013091
+Completed      12743000 cycles,       3142809 commits:    314019 Hz,     52814 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fbb2 ffffffff81013091
+Completed      12802000 cycles,       3154493 commits:    291623 Hz,     57751 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a3943 ffffffff81013091
+Completed      12875000 cycles,       3164534 commits:    361217 Hz,     49684 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810aa549 ffffffff81013091
+Completed      12942000 cycles,       3175960 commits:    333856 Hz,     56935 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106b1ff ffffffff81013091
+Completed      13017000 cycles,       3184583 commits:    374074 Hz,     43008 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c240 ffffffff81013091
+Completed      13074000 cycles,       3198956 commits:    280764 Hz,     70796 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81164683 ffffffff81013091
+Completed      13106000 cycles,       3232394 commits:    156904 Hz,    163955 insns/sec: rip ffffffff810929c4 ffffffff81013091 ffffffff8105012d ffffffff81013091
+Completed      13173000 cycles,       3243209 commits:    331903 Hz,     53575 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d0394c0 ffffffff81013091
+Completed      13240000 cycles,       3252829 commits:    334208 Hz,     47986 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81083e01 ffffffff81013091
+Completed      13314000 cycles,       3261187 commits:    369720 Hz,     41758 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8115c541 ffffffff81013091
+Completed      13368000 cycles,       3280308 commits:    268828 Hz,     95190 insns/sec: rip ffffffff81391426 ffffffff81013091 ffffffff81009e20 ffffffff81013091
+Completed      13424000 cycles,       3294019 commits:    276172 Hz,     67617 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d049f42 ffffffff81013091
+Completed      13477000 cycles,       3308320 commits:    264593 Hz,     71395 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03fda9 ffffffff81013091
+Completed      13520000 cycles,       3328334 commits:    209766 Hz,     97634 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116ad88 ffffffff81013091
+Completed      13570000 cycles,       3347987 commits:    240680 Hz,     94601 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81070c6f ffffffff81013091
+Completed      13623000 cycles,       3366620 commits:    262796 Hz,     92390 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81163c46 ffffffff81013091
+Completed      13662000 cycles,       3393446 commits:    193238 Hz,    132918 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff810510e9 ffffffff81013091
+Completed      13715000 cycles,       3407205 commits:    263738 Hz,     68467 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc117 ffffffff81013091
+Completed      13760000 cycles,       3427479 commits:    223650 Hz,    100762 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      13813000 cycles,       3442437 commits:    259829 Hz,     73330 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d042fa7 ffffffff81013091
+Completed      13863000 cycles,       3459764 commits:    248094 Hz,     85974 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81082a03 ffffffff81013091
+Completed      13919000 cycles,       3471992 commits:    277939 Hz,     60690 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810255f3 ffffffff81013091
+Completed      13975000 cycles,       3485063 commits:    279974 Hz,     65349 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81084c42 ffffffff81013091
+Completed      14041000 cycles,       3495623 commits:    328158 Hz,     52505 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81164743 ffffffff81013091
+Completed      14100000 cycles,       3508759 commits:    289697 Hz,     64499 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c8ad ffffffff81013091
+Completed      14151000 cycles,       3524781 commits:    249355 Hz,     78336 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107dc4c ffffffff81013091
+Completed      14199000 cycles,       3542995 commits:    236499 Hz,     89741 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ce5c ffffffff81013091
+Completed      14256000 cycles,       3556507 commits:    282550 Hz,     66979 insns/sec: rip ffffffff810501a8 ffffffff81013091 00007fe02d036e53 ffffffff81013091
+Completed      14303000 cycles,       3571822 commits:    231937 Hz,     75577 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ce5c ffffffff81013091
+Completed      14344000 cycles,       3592822 commits:    200011 Hz,    102445 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106cf0e ffffffff81013091
+Completed      14393000 cycles,       3611567 commits:    244457 Hz,     93517 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81070c65 ffffffff81013091
+Completed      14448000 cycles,       3628764 commits:    273263 Hz,     85442 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81221985 ffffffff81013091
+Completed      14494000 cycles,       3645340 commits:    229807 Hz,     82810 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03cd28 ffffffff81013091
+Completed      14550000 cycles,       3658227 commits:    278245 Hz,     64031 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d049f40 ffffffff81013091
+Completed      14596000 cycles,       3676118 commits:    227781 Hz,     88592 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e688 ffffffff81013091
+Completed      14645000 cycles,       3689192 commits:    244654 Hz,     65277 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fb53 ffffffff81013091
+Completed      14692000 cycles,       3704588 commits:    233143 Hz,     76371 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106af0a ffffffff81013091
+Completed      14739000 cycles,       3724047 commits:    232321 Hz,     96185 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0d81 ffffffff81013091
+Completed      14782000 cycles,       3746340 commits:    214517 Hz,    111214 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81157f0e ffffffff81013091
+Completed      14841000 cycles,       3760623 commits:    289886 Hz,     70177 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff8116acd1 ffffffff81013091
+Completed      14892000 cycles,       3776999 commits:    250739 Hz,     80511 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03d114 ffffffff81013091
+Completed      14942000 cycles,       3794346 commits:    249848 Hz,     86682 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e8d8 ffffffff81013091
+Completed      14992000 cycles,       3814754 commits:    248104 Hz,    101266 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e8d8 ffffffff81013091
+Completed      15041000 cycles,       3833720 commits:    243649 Hz,     94307 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03cd28 ffffffff81013091
+Completed      15090000 cycles,       3856752 commits:    244812 Hz,    115071 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03d132 ffffffff81013091
+Completed      15141000 cycles,       3879645 commits:    252962 Hz,    113550 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ea60 ffffffff81013091
+Completed      15190000 cycles,       3899647 commits:    243956 Hz,     99584 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e888 ffffffff81013091
+Completed      15236000 cycles,       3921331 commits:    226181 Hz,    106619 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e8d8 ffffffff81013091
+Completed      15300000 cycles,       3932668 commits:    318716 Hz,     56457 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e545 ffffffff81013091
+Completed      15356000 cycles,       3947559 commits:    274781 Hz,     73067 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e6ac ffffffff81013091
+Completed      15406000 cycles,       3960600 commits:    249336 Hz,     65032 insns/sec: rip ffffffff81013091 ffffffff81050174 00007fe02d03ec31 ffffffff81013091
+Completed      15456000 cycles,       3977167 commits:    246436 Hz,     81654 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ec1e ffffffff81013091
+Completed      15509000 cycles,       3991512 commits:    260685 Hz,     70557 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03cd28 ffffffff81013091
+Completed      15561000 cycles,       4008211 commits:    255950 Hz,     82194 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d049f4e ffffffff81013091
+Completed      15613000 cycles,       4024680 commits:    257567 Hz,     81574 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d042002 ffffffff81013091
+Completed      15662000 cycles,       4043667 commits:    238601 Hz,     92455 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ca6a ffffffff81013091
+Completed      15713000 cycles,       4062889 commits:    251564 Hz,     94815 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ce8f ffffffff81013091
+Completed      15769000 cycles,       4074682 commits:    279469 Hz,     58853 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391419 ffffffff81013091
+Completed      15814000 cycles,       4091679 commits:    222205 Hz,     83929 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03e6ac ffffffff81013091
+Completed      15867000 cycles,       4105891 commits:    259644 Hz,     69624 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106b15b ffffffff81013091
+Completed      15917000 cycles,       4121962 commits:    245997 Hz,     79068 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ec2a ffffffff81013091
+Completed      15971000 cycles,       4138521 commits:    262681 Hz,     80550 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d049f60 ffffffff81013091
+Completed      16025000 cycles,       4156202 commits:    266435 Hz,     87237 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03d132 ffffffff81013091
+Completed      16079000 cycles,       4173611 commits:    268890 Hz,     86687 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81084df2 ffffffff81013091
+Completed      16136000 cycles,       4187132 commits:    284720 Hz,     67538 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391884 ffffffff81013091
+Completed      16188000 cycles,       4202268 commits:    258530 Hz,     75252 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106cf0d ffffffff81013091
+Completed      16253000 cycles,       4214161 commits:    324163 Hz,     59311 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81155e70 ffffffff81013091
+Completed      16317000 cycles,       4225628 commits:    317159 Hz,     56826 insns/sec: rip ffffffff8107a028 ffffffff81013091 ffffffff81067383 ffffffff81013091
+Completed      16346000 cycles,       4258750 commits:    141308 Hz,    161393 insns/sec: rip ffffffff8102bd2e ffffffff81013091 ffffffff8100a4f7 ffffffff81013091
+Completed      16399000 cycles,       4272695 commits:    264099 Hz,     69488 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107b7c3 ffffffff81013091
+Completed      16460000 cycles,       4284971 commits:    301689 Hz,     60713 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81167350 ffffffff81013091
+Completed      16533000 cycles,       4292260 commits:    363158 Hz,     36261 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810575a0 ffffffff81013091
+Completed      16597000 cycles,       4302537 commits:    316074 Hz,     50754 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c8cd088 ffffffff81013091
+Completed      16648000 cycles,       4316877 commits:    254032 Hz,     71427 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fb18 ffffffff81013091
+Completed      16705000 cycles,       4328539 commits:    284798 Hz,     58268 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81067199 ffffffff81013091
+Completed      16758000 cycles,       4343703 commits:    257380 Hz,     73639 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106ce64 ffffffff81013091
+Completed      16807000 cycles,       4363020 commits:    239957 Hz,     94597 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0da3 ffffffff81013091
+Completed      16878000 cycles,       4373603 commits:    354324 Hz,     52814 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff812231b6 ffffffff81013091
+Completed      16924000 cycles,       4391424 commits:    226477 Hz,     87740 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81155502 ffffffff81013091
+Completed      16960000 cycles,       4414403 commits:    176457 Hz,    112633 insns/sec: rip ffffffff81013091 ffffffff81050172 ffffffff81170067 ffffffff81013091
+Completed      17002000 cycles,       4433826 commits:    205970 Hz,     95251 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81164eb5 ffffffff81013091
+Completed      17046000 cycles,       4454516 commits:    218191 Hz,    102599 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81070980 ffffffff81013091
+Completed      17097000 cycles,       4470074 commits:    252856 Hz,     77136 insns/sec: rip ffffffff8100e1c0 ffffffff81013091 ffffffff81157e63 ffffffff81013091
+Completed      17145000 cycles,       4485362 commits:    239772 Hz,     76367 insns/sec: rip ffffffff812275d0 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      17194000 cycles,       4502785 commits:    243936 Hz,     86736 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c59c1 ffffffff81013091
+Completed      17235000 cycles,       4527451 commits:    199698 Hz,    120140 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81157306 ffffffff81013091
+Completed      17283000 cycles,       4543795 commits:    237515 Hz,     80874 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106fc51 ffffffff81013091
+Completed      17319000 cycles,       4568239 commits:    178242 Hz,    121026 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8115bed9 ffffffff81013091
+Completed      17362000 cycles,       4588075 commits:    214075 Hz,     98753 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81081ba4 ffffffff81013091
+Completed      17420000 cycles,       4602326 commits:    277071 Hz,     68078 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116adb3 ffffffff81013091
+Completed      17468000 cycles,       4622513 commits:    234621 Hz,     98673 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81170052 ffffffff81013091
+Completed      17513000 cycles,       4642677 commits:    223590 Hz,    100188 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107074a ffffffff81013091
+Completed      17550000 cycles,       4668152 commits:    181844 Hz,    125202 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81170072 ffffffff81013091
+Completed      17595000 cycles,       4686069 commits:    221159 Hz,     88055 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391428 ffffffff81013091
+Completed      17630000 cycles,       4709257 commits:    171558 Hz,    113660 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c197c ffffffff81013091
+Completed      17674000 cycles,       4728673 commits:    218831 Hz,     96564 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391389 ffffffff81013091
+Completed      17709000 cycles,       4752191 commits:    172962 Hz,    116221 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106b14f ffffffff81013091
+Completed      17744000 cycles,       4776669 commits:    172768 Hz,    120829 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff81050fb1 ffffffff81013091
+Completed      17782000 cycles,       4797814 commits:    187314 Hz,    104230 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107071a ffffffff81013091
+Completed      17815000 cycles,       4824763 commits:    161396 Hz,    131802 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811554f0 ffffffff81013091
+Completed      17856000 cycles,       4844568 commits:    202527 Hz,     97830 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116ad86 ffffffff81013091
+Completed      17886000 cycles,       4871173 commits:    149687 Hz,    132748 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81040cf2 ffffffff81013091
+Completed      17933000 cycles,       4888543 commits:    232894 Hz,     86071 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81025697 ffffffff81013091
+Completed      17969000 cycles,       4912273 commits:    179368 Hz,    118234 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116624a ffffffff81013091
+Completed      18011000 cycles,       4934158 commits:    206375 Hz,    107536 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116bbc1 ffffffff81013091
+Completed      18045000 cycles,       4957315 commits:    168192 Hz,    114554 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8117006f ffffffff81013091
+Completed      18086000 cycles,       4978492 commits:    203126 Hz,    104917 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810675ff ffffffff81013091
+Completed      18127000 cycles,       4999513 commits:    204144 Hz,    104666 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81067a43 ffffffff81013091
+Completed      18176000 cycles,       5015573 commits:    243549 Hz,     79824 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106af12 ffffffff81013091
+Completed      18216000 cycles,       5037899 commits:    199580 Hz,    111395 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8117005a ffffffff81013091
+Completed      18260000 cycles,       5058919 commits:    216231 Hz,    103299 insns/sec: rip ffffffff81013091 ffffffff8100a512 ffffffff81170069 ffffffff81013091
+Completed      18295000 cycles,       5080023 commits:    173794 Hz,    104793 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      18332000 cycles,       5104536 commits:    184332 Hz,    122122 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116bcca ffffffff81013091
+Completed      18372000 cycles,       5125114 commits:    199671 Hz,    102720 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810256e8 ffffffff8100a491
+Completed      18431000 cycles,       5138513 commits:    292662 Hz,     66464 insns/sec: rip ffffffff81013091 ffffffff81013091 00000000009201d0 ffffffff81013091
+Completed      18478000 cycles,       5152662 commits:    231086 Hz,     69566 insns/sec: rip ffffffff81013091 ffffffff81013091 000000000046acf0 ffffffff81013091
+Completed      18516000 cycles,       5169146 commits:    185190 Hz,     80333 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c3b9592 ffffffff81013091
+Completed      18575000 cycles,       5183351 commits:    292075 Hz,     70320 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8102563a ffffffff81013091
+Completed      18627000 cycles,       5197928 commits:    252497 Hz,     70781 insns/sec: rip ffffffff81013091 ffffffff81013091 0000000000922a0b ffffffff81013091
+Completed      18672000 cycles,       5215326 commits:    217807 Hz,     84209 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106cf0d ffffffff81013091
+Completed      18722000 cycles,       5233879 commits:    246257 Hz,     91376 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811661cb ffffffff81013091
+Completed      18765000 cycles,       5254592 commits:    208938 Hz,    100645 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0e86 ffffffff81013091
+Completed      18799000 cycles,       5280517 commits:    169317 Hz,    129104 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff8138fa41 ffffffff81013091
+Completed      18839000 cycles,       5305019 commits:    196474 Hz,    120350 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107dd0b ffffffff81013091
+Completed      18898000 cycles,       5317702 commits:    290932 Hz,     62540 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81098de0 ffffffff81013091
+Completed      18965000 cycles,       5327804 commits:    331934 Hz,     50047 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116ad19 ffffffff81013091
+Completed      19004000 cycles,       5351692 commits:    193272 Hz,    118381 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0da3 ffffffff81013091
+Completed      19052000 cycles,       5369909 commits:    238322 Hz,     90448 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ce8f ffffffff81013091
+Completed      19112000 cycles,       5383142 commits:    289743 Hz,     63902 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811e3070 ffffffff81013091
+Completed      19168000 cycles,       5397155 commits:    278750 Hz,     69752 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811e32b8 ffffffff81013091
+Completed      19220000 cycles,       5413979 commits:    255806 Hz,     82763 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810ab212 ffffffff81013091
+Completed      19276000 cycles,       5426388 commits:    273943 Hz,     60702 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c3f19bb ffffffff81013091
+Completed      19321000 cycles,       5440504 commits:    224611 Hz,     70458 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c3f1948 ffffffff81013091
+Completed      19367000 cycles,       5454350 commits:    226466 Hz,     68166 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c3f1999 ffffffff81013091
+Completed      19413000 cycles,       5468199 commits:    229102 Hz,     68974 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c3f194c ffffffff81013091
+Completed      19459000 cycles,       5482526 commits:    229883 Hz,     71598 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c3f194c ffffffff81013091
+Completed      19516000 cycles,       5494509 commits:    283430 Hz,     59584 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810829e8 ffffffff81013091
+Completed      19574000 cycles,       5508486 commits:    286863 Hz,     69129 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81093a70 ffffffff81013091
+Completed      19627000 cycles,       5525537 commits:    262476 Hz,     84443 insns/sec: rip ffffffff81013091 ffffffff81013091 0000000000476430 ffffffff81013091
+Completed      19689000 cycles,       5536456 commits:    305783 Hz,     53852 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d049f40 ffffffff81013091
+Completed      19743000 cycles,       5550928 commits:    263609 Hz,     70647 insns/sec: rip ffffffff81013091 ffffffff81013091 0000000000483fd7 ffffffff81013091
+Completed      19794000 cycles,       5565401 commits:    252155 Hz,     71557 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ce5c ffffffff81013091
+Completed      19849000 cycles,       5583124 commits:    271410 Hz,     87458 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811e00c0 ffffffff81013091
+Completed      19908000 cycles,       5595807 commits:    293933 Hz,     63185 insns/sec: rip ffffffff81013091 ffffffff81013091 0000000000470b54 ffffffff81013091
+Completed      19956000 cycles,       5613809 commits:    232931 Hz,     87359 insns/sec: rip ffffffff81013091 ffffffff81013070 ffffffff81050171 ffffffff81013091
+Completed      19988000 cycles,       5638810 commits:    156301 Hz,    122115 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c354430 ffffffff81013091
+Completed      20028000 cycles,       5662433 commits:    197700 Hz,    116756 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810c0e86 ffffffff81013091
+Completed      20069000 cycles,       5687033 commits:    202340 Hz,    121404 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811661cb ffffffff81013091
+Completed      20108000 cycles,       5713659 commits:    192860 Hz,    131669 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      20149000 cycles,       5734994 commits:    200435 Hz,    104299 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81050122 ffffffff81013091
+Completed      20186000 cycles,       5754723 commits:    183303 Hz,     97740 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116acdc ffffffff81013091
+Completed      20242000 cycles,       5767571 commits:    275125 Hz,     63121 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03d120 ffffffff81013091
+Completed      20282000 cycles,       5788956 commits:    196990 Hz,    105316 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106b1ff ffffffff81013091
+Completed      20321000 cycles,       5814655 commits:    189928 Hz,    125153 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116bbc1 ffffffff81013091
+Completed      20364000 cycles,       5835923 commits:    214770 Hz,    106226 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      20416000 cycles,       5850693 commits:    259320 Hz,     73656 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106ceca ffffffff81013091
+Completed      20460000 cycles,       5870442 commits:    218596 Hz,     98114 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff8116acd1 ffffffff81013091
+Completed      20501000 cycles,       5890708 commits:    202557 Hz,    100122 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810f02eb ffffffff81013091
+Completed      20536000 cycles,       5916715 commits:    170968 Hz,    127039 insns/sec: rip ffffffff810c5880 ffffffff81013091 ffffffff81009e2a ffffffff81013091
+Completed      20594000 cycles,       5928941 commits:    289933 Hz,     61115 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02cafe8d0 ffffffff81013091
+Completed      20650000 cycles,       5942308 commits:    276822 Hz,     66076 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c31a0c0 ffffffff81013091
+Completed      20708000 cycles,       5957673 commits:    285559 Hz,     75648 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02d03ce8f ffffffff81013091
+Completed      20752000 cycles,       5976418 commits:    219288 Hz,     93421 insns/sec: rip ffffffff81013091 ffffffff81013091 0000000000480de0 ffffffff81013091
+Completed      20805000 cycles,       5989482 commits:    263265 Hz,     64892 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02c0c67f8 ffffffff81013091
+Completed      20862000 cycles,       6003672 commits:    279466 Hz,     69572 insns/sec: rip ffffffff81013091 ffffffff81013091 00007fe02b834e42 ffffffff81013091
+Completed      20929000 cycles,       6013515 commits:    332394 Hz,     48832 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81034170 ffffffff81013091
+Completed      20986000 cycles,       6028011 commits:    284269 Hz,     72294 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed      21037000 cycles,       6044971 commits:    252141 Hz,     83849 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107ce7b ffffffff81013091
+Completed      21091000 cycles,       6062172 commits:    266550 Hz,     84906 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cda5 ffffffff81013091
+Completed      21147000 cycles,       6079726 commits:    277058 Hz,     86848 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed      21202000 cycles,       6097016 commits:    273656 Hz,     86027 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed      21256000 cycles,       6114843 commits:    263579 Hz,     87015 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed      21308000 cycles,       6131381 commits:    258621 Hz,     82251 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed      21363000 cycles,       6148369 commits:    271758 Hz,     83938 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cd8d ffffffff81013091
+Completed      21416000 cycles,       6165620 commits:    262102 Hz,     85311 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81086753 ffffffff81013091
+Completed      21470000 cycles,       6182595 commits:    267620 Hz,     84127 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107ce7b ffffffff81013091
+Completed      21526000 cycles,       6194424 commits:    275139 Hz,     58118 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391419 ffffffff81013091
+Completed      21577000 cycles,       6209640 commits:    248422 Hz,     74117 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8108aa59 ffffffff81013091
+Completed      21620000 cycles,       6231171 commits:    214165 Hz,    107237 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81070441 ffffffff81013091
+Completed      21664000 cycles,       6248082 commits:    219238 Hz,     84262 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8109925b ffffffff81013091
+Completed      21724000 cycles,       6258462 commits:    298206 Hz,     51589 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8102bd10 ffffffff81013091
+Invalid opcode at 0xffffffff81009e17: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      21789000 cycles,       6265611 commits:    323404 Hz,     35569 insns/sec: rip 0000000000442b65 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      21866000 cycles,       6271741 commits:    384683 Hz,     30624 insns/sec: rip 00000000004a65a0 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      21937000 cycles,       6280162 commits:    352169 Hz,     41769 insns/sec: rip 0000000000432402 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22004000 cycles,       6288599 commits:    334633 Hz,     42138 insns/sec: rip 0000000000430483 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22069000 cycles,       6296862 commits:    322809 Hz,     41036 insns/sec: rip ffffffff81035c81 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22132000 cycles,       6308390 commits:    313867 Hz,     57432 insns/sec: rip ffffffff810a0263 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22190000 cycles,       6317640 commits:    289581 Hz,     46183 insns/sec: rip ffffffff8107fcba ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22251000 cycles,       6330116 commits:    303170 Hz,     62005 insns/sec: rip ffffffff8106b15f ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22295000 cycles,       6343990 commits:    219456 Hz,     69198 insns/sec: rip ffffffff81034877 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22341000 cycles,       6357739 commits:    228139 Hz,     68188 insns/sec: rip ffffffff8106b15b ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22395000 cycles,       6369225 commits:    269691 Hz,     57364 insns/sec: rip ffffffff8102aa7a ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22443000 cycles,       6380366 commits:    239913 Hz,     55684 insns/sec: rip ffffffff8116fbf8 ffffffff81167020 ffffffff81013091 ffffffff81013091
+Completed      22477000 cycles,       6396970 commits:    166404 Hz,     81264 insns/sec: rip ffffffff8116fb53 ffffffff81391a3e ffffffff81013091 ffffffff81013091
+Completed      22514000 cycles,       6414046 commits:    179238 Hz,     82721 insns/sec: rip ffffffff8106d231 ffffffff81391a72 ffffffff81013091 ffffffff81013091
+Completed      22549000 cycles,       6430647 commits:    174278 Hz,     82662 insns/sec: rip ffffffff8116fb53 ffffffff81097dae ffffffff81013091 ffffffff81013091
+Completed      22598000 cycles,       6443726 commits:    244648 Hz,     65301 insns/sec: rip ffffffff81032ba0 ffffffff81013091 ffffffff81013091 ffffffff81013091
+Completed      22647000 cycles,       6456186 commits:    243776 Hz,     61988 insns/sec: rip ffffffff8139135c 000000000042c68f ffffffff81013091 ffffffff81013091
+Completed      22689000 cycles,       6472358 commits:    206418 Hz,     79480 insns/sec: rip ffffffff8105012d 00007f2410a395a0 ffffffff81013091 ffffffff81013091
+Completed      22739000 cycles,       6489285 commits:    245501 Hz,     83111 insns/sec: rip ffffffff81013091 ffffffff8104c13c ffffffff81013091 ffffffff81013091
+Completed      22805000 cycles,       6498904 commits:    329296 Hz,     47992 insns/sec: rip ffffffff81013091 ffffffff8139135c ffffffff81013091 ffffffff81013091
+Completed      22872000 cycles,       6507265 commits:    327589 Hz,     40880 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810259bd ffffffff81013091
+Completed      22948000 cycles,       6515498 commits:    378881 Hz,     41043 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81069809 ffffffff81013091
+Completed      23014000 cycles,       6524872 commits:    326641 Hz,     46392 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810bc0b6 ffffffff81013091
+Completed      23087000 cycles,       6534966 commits:    360286 Hz,     49818 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81226bc4 ffffffff81013091
+Completed      23151000 cycles,       6544193 commits:    318872 Hz,     45972 insns/sec: rip ffffffff8107a000 ffffffff81013091 ffffffff81156ca4 ffffffff81013091
+Completed      23213000 cycles,       6557028 commits:    304011 Hz,     62935 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8106d0c7 ffffffff81013091
+Completed      23267000 cycles,       6580470 commits:    268612 Hz,    116607 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a04c7 ffffffff81013091
+Completed      23334000 cycles,       6590392 commits:    332737 Hz,     49274 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107ce7b ffffffff81013091
+Completed      23392000 cycles,       6604312 commits:    286171 Hz,     68681 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed      23451000 cycles,       6622418 commits:    292715 Hz,     89828 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107cdb7 ffffffff81013091
+Completed      23508000 cycles,       6640083 commits:    282370 Hz,     87510 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8107bea4 ffffffff81013091
+Completed      23567000 cycles,       6654742 commits:    292100 Hz,     72574 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810875d5 ffffffff81013091
+Completed      23617000 cycles,       6675061 commits:    246173 Hz,    100040 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8108aa5d ffffffff81013091
+Completed      23669000 cycles,       6690833 commits:    259129 Hz,     78595 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81171181 ffffffff81013091
+Completed      23739000 cycles,       6700151 commits:    345286 Hz,     45962 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810da2e1 ffffffff81013091
+Completed      23799000 cycles,       6713111 commits:    295325 Hz,     63790 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116a142 ffffffff81013091
+Completed      23857000 cycles,       6725837 commits:    288518 Hz,     63304 insns/sec: rip ffffffff8100a503 ffffffff81013091 ffffffff81010688 ffffffff81013091
+Completed      23901000 cycles,       6754918 commits:    219715 Hz,    145216 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116c959 ffffffff81013091
+Completed      23937000 cycles,       6792812 commits:    178828 Hz,    188237 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810d5d43 ffffffff81013091
+Completed      23988000 cycles,       6816128 commits:    252828 Hz,    115587 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb554d400 ffffffff81013091
+Completed      24043000 cycles,       6830047 commits:    270985 Hz,     68578 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fb18 ffffffff81013091
+Completed      24107000 cycles,       6839923 commits:    318428 Hz,     49137 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8100b1b9 ffffffff81013091
+Completed      24161000 cycles,       6853636 commits:    266939 Hz,     67787 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb5554900 ffffffff81013091
+Completed      24224000 cycles,       6864620 commits:    311217 Hz,     54260 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81391880 ffffffff81013091
+Completed      24280000 cycles,       6878699 commits:    275280 Hz,     69208 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81081bba ffffffff81013091
+Completed      24344000 cycles,       6889608 commits:    319959 Hz,     54538 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8117b7b8 ffffffff81013091
+Completed      24399000 cycles,       6902673 commits:    270111 Hz,     64163 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8116fb15 ffffffff81013091
+Completed      24454000 cycles,       6915400 commits:    273977 Hz,     63398 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb555d900 ffffffff81013091
+Completed      24502000 cycles,       6931257 commits:    235875 Hz,     77922 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb5557c2a ffffffff81013091
+Completed      24552000 cycles,       6948883 commits:    245602 Hz,     86579 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb5556149 ffffffff81013091
+Completed      24602000 cycles,       6964770 commits:    247543 Hz,     78654 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb5556114 ffffffff81013091
+Completed      24649000 cycles,       6985242 commits:    232965 Hz,    101473 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb5555e05 ffffffff81013091
+Completed      24696000 cycles,       7005577 commits:    232376 Hz,    100539 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb5556464 ffffffff81013091
+Completed      24753000 cycles,       7020017 commits:    282041 Hz,     71450 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff81084932 ffffffff81013091
+Completed      24810000 cycles,       7032274 commits:    282619 Hz,     60773 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8108255a ffffffff81013091
+Completed      24872000 cycles,       7042821 commits:    306132 Hz,     52077 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb5555f7f ffffffff81013091
+Completed      24927000 cycles,       7057078 commits:    270896 Hz,     70221 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff8109b764 ffffffff81013091
+Completed      24993000 cycles,       7067593 commits:    329970 Hz,     52570 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811d0298 ffffffff81013091
+Completed      25056000 cycles,       7080367 commits:    311515 Hz,     63163 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff810a2540 ffffffff81013091
+Completed      25129000 cycles,       7087709 commits:    362308 Hz,     36439 insns/sec: rip ffffffff81013091 ffffffff81013091 00007febb555b002 ffffffff81013091
+Completed      25187000 cycles,       7101434 commits:    284050 Hz,     67217 insns/sec: rip ffffffff81013091 ffffffff81013091 ffffffff811d2ddf ffffffff81013091
+Completed      25221000 cycles,       7129263 commits:    169038 Hz,    138358 insns/sec: rip ffffffff81013091 ffffffff81013091 00000000004009e3 ffffffff81013091
+Command received: -kill 
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         enabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      65log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        65stats.stats
+  -yamlstats    65stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      ivybridge
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Total Tags: ivybridge,c6220-6.(none),2019-11-24,total
+Stats Summary:
+user.base_machine.ivy_0_0.thread0.commit.ipc = 0.0996205
+user.base_machine.ivy_1_1.thread0.commit.ipc = 0.0617854
+user.base_machine.ivy_2_2.thread0.commit.ipc = 0.202945
+user.base_machine.ivy_3_3.thread0.commit.ipc = 0
+kernel.base_machine.ivy_0_0.thread0.commit.ipc = 0.0549736
+kernel.base_machine.ivy_1_1.thread0.commit.ipc = 0.0158641
+kernel.base_machine.ivy_2_2.thread0.commit.ipc = 0.198839
+kernel.base_machine.ivy_3_3.thread0.commit.ipc = 0.0110373
+total.base_machine.ivy_0_0.thread0.commit.ipc = 0.055991
+total.base_machine.ivy_1_1.thread0.commit.ipc = 0.0160959
+total.base_machine.ivy_2_2.thread0.commit.ipc = 0.199541
+total.base_machine.ivy_3_3.thread0.commit.ipc = 0.0110373
+Received simulation kill signal, stopped the simulation and killing the VM
