@@ -1,0 +1,2340 @@
+//  
+//  MARSS: Cycle Accurate Systems simulator for x86
+//  Copyright 1999-2007 Matt T. Yourst <yourst@yourst.com>
+//  Copyright 2009-2011 Avadh Patel <avadh4all@gmail.com>
+// 
+//  Git branch 'master' on date Sun Nov 24 03:05:05 2019 (HEAD: 5c18dc)
+//  Built Nov 24 2019 16:04:28 on BUILDHOST using gcc-6.3
+//  With 1 simulated cores
+//  Running on c6220-1.(none)
+//  
+
+Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      60log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        60stats.stats
+  -yamlstats    60stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     0
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      atom_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      60log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        60stats.stats
+  -yamlstats    60stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      atom_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Command received: -run 
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          enabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      60log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        60stats.stats
+  -yamlstats    60stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      atom_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Initializing core 'base'
+atom_#
+# Simulated Machine Configuration
+#
+---
+machine:
+  name: atom_core
+  cpu_contexts: 1
+  freq: 3300000000
+  atom_0:
+    type: core
+    threads: 1
+    fetch_q_size: 7
+    forward_buf_size: 32
+    itlb_size: 32
+    dtlb_size: 32
+    total_FUs: 6
+    int_FUs: 2
+    fp_FUs: 2
+    agu_FUs: 2
+    frontend_stages: 6
+    forward_buf_size: 32
+    commit_buf_size: 32
+    fetch_width: 2
+    issue_width: 2
+    max_branch_in_flight: 6
+    per_thread:
+      dispatch_q_size: 16
+      store_buf_size: 16
+  core_0_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  L1_I_0:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 2
+    pending_queue_size: 128
+    config: writeback
+  L1_D_0:
+    type: cache
+    size: 131072
+    sets: 256
+    ways: 8
+    line_size: 64
+    latency: 2
+    pending_queue_size: 128
+    config: writeback
+  L2_0:
+    type: cache
+    size: 2097152
+    sets: 4096
+    ways: 8
+    line_size: 64
+    latency: 5
+    pending_queue_size: 128
+    config: writeback
+  MEM_0:
+    type: dram_cont
+    RAM_size: 134217728
+    number_of_banks: 64
+    latency: 165
+    latency_ns: 50
+    pending_queue_size: 128
+  p2p_core_L1_I_0:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_D_0:
+    type: interconnect
+    latency: 0
+  p2p_L1_I_0_L2_00:
+    type: interconnect
+    latency: 0
+  p2p_L2_0_L1_D_00:
+    type: interconnect
+    latency: 0
+  p2p_L2_0_MEM_00:
+    type: interconnect
+    latency: 0
+
+# End Machine Configuration
+Dumped all machine configuration
+Completed             0 cycles,             0 commits:         0 Hz,         0 insns/sec: rip 0000000000400aef
+Completed        350000 cycles,         63584 commits:   1749300 Hz,    317792 insns/sec: rip ffffffff812dc966
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed        727000 cycles,        105300 commits:   1882901 Hz,    208347 insns/sec: rip 000000000042b688
+Completed       1019000 cycles,        183949 commits:   1455683 Hz,    392082 insns/sec: rip ffffffff81064178
+Completed       1302000 cycles,        261932 commits:   1411649 Hz,    388991 insns/sec: rip ffffffff81083cc1
+Completed       1613000 cycles,        326646 commits:   1554835 Hz,    323535 insns/sec: rip ffffffff812e3253
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed       1865000 cycles,        399382 commits:   1256888 Hz,    362781 insns/sec: rip ffffffff811097bf
+Completed       2151000 cycles,        449207 commits:   1429606 Hz,    249056 insns/sec: rip ffffffff8101401f
+Completed       2422000 cycles,        529550 commits:   1349171 Hz,    399987 insns/sec: rip ffffffff8112c7a3
+Completed       2645000 cycles,        645157 commits:   1114330 Hz,    577688 insns/sec: rip ffffffff81136b80
+Completed       2850000 cycles,        735676 commits:   1019138 Hz,    450006 insns/sec: rip ffffffff81014016
+Completed       3071000 cycles,        828905 commits:   1103716 Hz,    465603 insns/sec: rip ffffffff813a6dcf
+Completed       3336000 cycles,        920524 commits:   1322873 Hz,    457359 insns/sec: rip ffffffff8116e102
+Completed       3585000 cycles,        998515 commits:   1243175 Hz,    389383 insns/sec: rip ffffffff812e3253
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed       3886000 cycles,       1072337 commits:   1501094 Hz,    368152 insns/sec: rip 00007f8f6e70df0e
+Completed       4129000 cycles,       1169139 commits:   1211611 Hz,    482660 insns/sec: rip ffffffff81116234
+Completed       4316000 cycles,       1248710 commits:    930333 Hz,    395869 insns/sec: rip ffffffff812dc8b1
+Completed       4513000 cycles,       1331279 commits:    982141 Hz,    411646 insns/sec: rip ffffffff812e3822
+Invalid opcode at 0x7f8f6e718e09: split_invalid_basic_blocks 0, first_insn_in_bb? 1
+Completed       4693000 cycles,       1400387 commits:    896671 Hz,    344261 insns/sec: rip ffffffff81014025
+Completed       4974000 cycles,       1477367 commits:   1402766 Hz,    384288 insns/sec: rip 00007f8f6e20e446
+Completed       5253000 cycles,       1552496 commits:   1389217 Hz,    374087 insns/sec: rip ffffffff81116c0d
+Completed       5446000 cycles,       1618528 commits:    964631 Hz,    330033 insns/sec: rip ffffffff81132750
+Completed       5671000 cycles,       1724245 commits:   1123904 Hz,    528070 insns/sec: rip ffffffff8139a437
+Completed       5896000 cycles,       1825694 commits:   1120522 Hz,    505226 insns/sec: rip ffffffff8100bfe7
+Completed       6120000 cycles,       1926064 commits:   1119789 Hz,    501755 insns/sec: rip ffffffff812de62d
+Completed       6308000 cycles,       2006668 commits:    935896 Hz,    401260 insns/sec: rip ffffffff8115ef5c
+Completed       6503000 cycles,       2082781 commits:    973682 Hz,    380050 insns/sec: rip 00007f8f6e48d5c3
+Completed       6737000 cycles,       2176038 commits:   1165892 Hz,    464647 insns/sec: rip 00007f8f6e4a3da4
+Completed       6981000 cycles,       2269086 commits:   1216553 Hz,    463925 insns/sec: rip 00000000004106f0
+Completed       7201000 cycles,       2357221 commits:   1096610 Hz,    439317 insns/sec: rip ffffffff81014011
+Completed       7423000 cycles,       2439008 commits:   1108865 Hz,    408516 insns/sec: rip 00007f8f6e16f5e6
+Completed       7666000 cycles,       2534079 commits:   1212401 Hz,    474338 insns/sec: rip 00007f8f6e16f5c5
+Completed       7908000 cycles,       2628564 commits:   1208552 Hz,    471860 insns/sec: rip ffffffff8110ac04
+Completed       8155000 cycles,       2721216 commits:   1230695 Hz,    461645 insns/sec: rip 00007f8f6e125c65
+Completed       8397000 cycles,       2816130 commits:   1206883 Hz,    473347 insns/sec: rip 00007f8f6e48d5ea
+Completed       8644000 cycles,       2908592 commits:   1233586 Hz,    461780 insns/sec: rip 00007f8f6e125be2
+Completed       8885000 cycles,       3002862 commits:   1204625 Hz,    471203 insns/sec: rip 00007f8f6e48d5b4
+Completed       9127000 cycles,       3097435 commits:   1208046 Hz,    472101 insns/sec: rip 00007f8f6e48d592
+Completed       9321000 cycles,       3181704 commits:    967797 Hz,    420388 insns/sec: rip ffffffff81014025
+Completed       9558000 cycles,       3270321 commits:   1180470 Hz,    441391 insns/sec: rip 00007f8f6e16f5c5
+Completed       9798000 cycles,       3364528 commits:   1196619 Hz,    469708 insns/sec: rip ffffffff8112af45
+Start logging at level 1 in cycle 10000000
+Completed      10045000 cycles,       3456906 commits:   1230017 Hz,    460026 insns/sec: rip 00007f8f6e48d606
+Completed      10287000 cycles,       3551682 commits:   1208575 Hz,    473322 insns/sec: rip 00007f8f6e48d55b
+Completed      10533000 cycles,       3645262 commits:   1225563 Hz,    466212 insns/sec: rip ffffffff815dc690
+Completed      10745000 cycles,       3748754 commits:   1056252 Hz,    515630 insns/sec: rip ffffffff810608a3
+Completed      10953000 cycles,       3849720 commits:   1039408 Hz,    504542 insns/sec: rip ffffffff813a7096
+Completed      11162000 cycles,       3951729 commits:   1043608 Hz,    509366 insns/sec: rip ffffffff813a6dcf
+Completed      11369000 cycles,       4052217 commits:   1034291 Hz,    502095 insns/sec: rip ffffffff81038c4b
+Completed      11578000 cycles,       4154119 commits:   1042753 Hz,    508414 insns/sec: rip ffffffff814735b8
+Completed      11787000 cycles,       4255645 commits:   1041176 Hz,    505772 insns/sec: rip ffffffff8102e471
+Completed      12026000 cycles,       4350424 commits:   1190650 Hz,    472170 insns/sec: rip 00007f8f6e48d5e5
+Completed      12269000 cycles,       4445139 commits:   1214894 Hz,    473533 insns/sec: rip 00007f8f6e125c7d
+Completed      12512000 cycles,       4540524 commits:   1210383 Hz,    475112 insns/sec: rip 00007f8f6e48d612
+Completed      12758000 cycles,       4632860 commits:   1229616 Hz,    461536 insns/sec: rip 00007f8f6e16f5c5
+Completed      13001000 cycles,       4727894 commits:   1210591 Hz,    473446 insns/sec: rip 0000000000410b73
+Completed      13243000 cycles,       4822661 commits:   1208349 Hz,    473188 insns/sec: rip 0000000000415171
+Completed      13490000 cycles,       4915594 commits:   1230778 Hz,    463076 insns/sec: rip 00007f8f6e125bc1
+Completed      13732000 cycles,       5010616 commits:   1205359 Hz,    473288 insns/sec: rip 00007f8f6e4a3dfd
+Completed      13979000 cycles,       5103375 commits:   1234458 Hz,    463591 insns/sec: rip 0000000000415186
+Completed      14218000 cycles,       5197244 commits:   1194221 Hz,    469039 insns/sec: rip 00007f8f6e125c7d
+Completed      14461000 cycles,       5292463 commits:   1213180 Hz,    475381 insns/sec: rip 00007f8f6e48d579
+Completed      14706000 cycles,       5384936 commits:   1223643 Hz,    461853 insns/sec: rip 00007f8f6e125ce5
+Completed      14946000 cycles,       5478937 commits:   1196033 Hz,    468451 insns/sec: rip 00007f8f6e48d62a
+Completed      15192000 cycles,       5571961 commits:   1228962 Hz,    464727 insns/sec: rip ffffffff812e339f
+Completed      15435000 cycles,       5666539 commits:   1214382 Hz,    472649 insns/sec: rip 00007f8f6e48d60e
+Completed      15677000 cycles,       5761221 commits:   1209831 Hz,    473343 insns/sec: rip 00007f8f6e125c5c
+Completed      15947000 cycles,       5844661 commits:   1345175 Hz,    415709 insns/sec: rip 00007f8f6e16f5f2
+Completed      16190000 cycles,       5940129 commits:   1212086 Hz,    476195 insns/sec: rip 00007f8f6e48d508
+Completed      16434000 cycles,       6035725 commits:   1215931 Hz,    476385 insns/sec: rip 00007f8f6e48d5c3
+Completed      16682000 cycles,       6129241 commits:   1239412 Hz,    467358 insns/sec: rip 00007f8f6e48d5fe
+Completed      16927000 cycles,       6225456 commits:   1223000 Hz,    480289 insns/sec: rip 00007f8f6e125b6f
+Completed      17172000 cycles,       6321643 commits:   1220646 Hz,    479225 insns/sec: rip 0000000000415191
+Completed      17419000 cycles,       6414996 commits:   1231372 Hz,    465394 insns/sec: rip 000000000041519d
+Completed      17663000 cycles,       6510974 commits:   1218728 Hz,    479390 insns/sec: rip 000000000040f7c5
+Completed      17915000 cycles,       6606146 commits:   1255171 Hz,    474036 insns/sec: rip 00007f8f6e16f5c5
+Completed      18165000 cycles,       6704374 commits:   1245864 Hz,    489515 insns/sec: rip 00007f8f6e17596c
+Completed      18414000 cycles,       6801896 commits:   1244802 Hz,    487532 insns/sec: rip 00007f8f6e16f7cf
+Completed      18668000 cycles,       6897695 commits:   1266529 Hz,    477685 insns/sec: rip 00007f8f6e48d56f
+Completed      18917000 cycles,       6995018 commits:   1241419 Hz,    485215 insns/sec: rip 0000000000410ac7
+Completed      19171000 cycles,       7090431 commits:   1266406 Hz,    475715 insns/sec: rip 00007f8f6e125b43
+Completed      19421000 cycles,       7188168 commits:   1245594 Hz,    486962 insns/sec: rip 00007f8f6e48d606
+Completed      19669000 cycles,       7284362 commits:   1238414 Hz,    480355 insns/sec: rip 00007f8f6e48d5e1
+Completed      19923000 cycles,       7379730 commits:   1269622 Hz,    476698 insns/sec: rip 00007f8f6e16f641
+Completed      20174000 cycles,       7477864 commits:   1252658 Hz,    489754 insns/sec: rip 00007f8f6e16f7fb
+Completed      20427000 cycles,       7573425 commits:   1262886 Hz,    477006 insns/sec: rip 00007f8f6e16f5e6
+Completed      20675000 cycles,       7671637 commits:   1237450 Hz,    490050 insns/sec: rip 00007f8f6e48d5fe
+Completed      20925000 cycles,       7769526 commits:   1249417 Hz,    489216 insns/sec: rip 0000000000415179
+Completed      21180000 cycles,       7865150 commits:   1274479 Hz,    477924 insns/sec: rip 00007f8f6e4a3def
+Completed      21431000 cycles,       7963667 commits:   1250277 Hz,    490731 insns/sec: rip 00007f8f6e16f5c5
+Completed      21681000 cycles,       8061875 commits:   1244618 Hz,    488926 insns/sec: rip 00007f8f6e16f626
+Completed      21937000 cycles,       8158646 commits:   1276921 Hz,    482691 insns/sec: rip 00007f8f6e48d4e8
+Completed      22151000 cycles,       8262352 commits:   1065205 Hz,    516206 insns/sec: rip ffffffff8106cf12
+Completed      22365000 cycles,       8367078 commits:   1069961 Hz,    523611 insns/sec: rip ffffffff813a6dfb
+Completed      22580000 cycles,       8471697 commits:   1072818 Hz,    522033 insns/sec: rip ffffffff813a6d84
+Completed      22804000 cycles,       8573189 commits:   1114908 Hz,    505153 insns/sec: rip ffffffffa00550bc
+Completed      23019000 cycles,       8678250 commits:   1074435 Hz,    525029 insns/sec: rip ffffffff813a7162
+Completed      23253000 cycles,       8778497 commits:   1164214 Hz,    498756 insns/sec: rip ffffffff810d23ef
+Completed      23468000 cycles,       8883839 commits:   1070769 Hz,    524637 insns/sec: rip ffffffff812dd589
+Completed      23682000 cycles,       8987829 commits:   1068803 Hz,    519368 insns/sec: rip ffffffff81038c49
+Completed      23897000 cycles,       9092704 commits:   1074666 Hz,    524212 insns/sec: rip ffffffff813a6dc8
+Completed      24113000 cycles,       9196595 commits:   1076940 Hz,    517983 insns/sec: rip 00007f8f6e125c9a
+Completed      24369000 cycles,       9292706 commits:   1277829 Hz,    479740 insns/sec: rip 00007f8f6e125c6b
+Completed      24620000 cycles,       9390992 commits:   1253802 Hz,    490961 insns/sec: rip 00007f8f6e125b67
+Completed      24870000 cycles,       9489091 commits:   1247351 Hz,    489455 insns/sec: rip 00007f8f6e125c7a
+Completed      25125000 cycles,       9585256 commits:   1270859 Hz,    479263 insns/sec: rip 00007f8f6e48d626
+Completed      25376000 cycles,       9683768 commits:   1252489 Hz,    491574 insns/sec: rip 00007f8f6e4a3db2
+Completed      25631000 cycles,       9780127 commits:   1274739 Hz,    481696 insns/sec: rip 00007f8f6e48d622
+Completed      25881000 cycles,       9878333 commits:   1249738 Hz,    490927 insns/sec: rip 00007f8f6e16f636
+Completed      26132000 cycles,       9977359 commits:   1251193 Hz,    493628 insns/sec: rip 00007f8f6e125d46
+Completed      26389000 cycles,      10074212 commits:   1281465 Hz,    482932 insns/sec: rip 00007f8f6e125c76
+Completed      26640000 cycles,      10172611 commits:   1251406 Hz,    490586 insns/sec: rip 00007f8f6e48d63a
+Completed      26895000 cycles,      10269020 commits:   1271061 Hz,    480555 insns/sec: rip 00007f8f6e16f661
+Completed      27146000 cycles,      10367375 commits:   1251196 Hz,    490284 insns/sec: rip 00007f8f6e48d4df
+Completed      27396000 cycles,      10465642 commits:   1248220 Hz,    490635 insns/sec: rip 00007f8f6e125b9c
+Completed      27647000 cycles,      10562537 commits:   1254027 Hz,    484099 insns/sec: rip 00007f8f6e125b0a
+Completed      27926000 cycles,      10667879 commits:   1394788 Hz,    526630 insns/sec: rip 00000000004373a0
+Completed      28225000 cycles,      10780793 commits:   1490999 Hz,    563059 insns/sec: rip 000000000041891c
+Completed      28489000 cycles,      10868514 commits:   1317000 Hz,    437608 insns/sec: rip 0000000000417ccc
+Completed      28789000 cycles,      10961121 commits:   1496131 Hz,    461840 insns/sec: rip 00007f8f6e49163f
+Completed      29085000 cycles,      11055311 commits:   1477671 Hz,    470208 insns/sec: rip 00007f8f6e4914e6
+Completed      29385000 cycles,      11150237 commits:   1498520 Hz,    474161 insns/sec: rip 00007f8f6e498a74
+Completed      29683000 cycles,      11245343 commits:   1486991 Hz,    474569 insns/sec: rip 00007f8f6e49155b
+Completed      29983000 cycles,      11340474 commits:   1498844 Hz,    475288 insns/sec: rip 00007f8f6e498a6a
+Completed      30279000 cycles,      11434929 commits:   1478636 Hz,    471839 insns/sec: rip 00007f8f6e491444
+Completed      30579000 cycles,      11530141 commits:   1497402 Hz,    475235 insns/sec: rip 00007f8f6e49160d
+Completed      30877000 cycles,      11625043 commits:   1488656 Hz,    474082 insns/sec: rip 0000000000418a70
+Completed      31178000 cycles,      11720810 commits:   1502726 Hz,    478111 insns/sec: rip 0000000000417d53
+Completed      31476000 cycles,      11815811 commits:   1488485 Hz,    474522 insns/sec: rip 0000000000418aa8
+Completed      31775000 cycles,      11911138 commits:   1491700 Hz,    475583 insns/sec: rip 00007f8f6e491466
+Completed      32074000 cycles,      12006035 commits:   1493434 Hz,    473988 insns/sec: rip 00007f8f6e490702
+Completed      32374000 cycles,      12101403 commits:   1497486 Hz,    476040 insns/sec: rip 00007f8f6e491608
+Completed      32672000 cycles,      12196162 commits:   1488271 Hz,    473245 insns/sec: rip 00007f8f6e4a4705
+Completed      32971000 cycles,      12291539 commits:   1489798 Hz,    475225 insns/sec: rip 00007f8f6e4a4738
+Completed      33268000 cycles,      12385742 commits:   1484873 Hz,    470974 insns/sec: rip 00007f8f6e498a25
+Completed      33566000 cycles,      12481027 commits:   1487010 Hz,    475469 insns/sec: rip 00007f8f6e4a46dd
+Completed      33864000 cycles,      12575827 commits:   1485782 Hz,    472658 insns/sec: rip 00007f8f6e491f22
+Completed      34161000 cycles,      12670776 commits:   1483366 Hz,    474222 insns/sec: rip 00007f8f6e491553
+Completed      34460000 cycles,      12765777 commits:   1494753 Hz,    474926 insns/sec: rip 00007f8f6e491531
+Completed      34758000 cycles,      12861066 commits:   1486895 Hz,    475452 insns/sec: rip 0000000000417cc9
+Completed      35058000 cycles,      12956206 commits:   1497121 Hz,    474787 insns/sec: rip 00000000004155fb
+Completed      35354000 cycles,      13050797 commits:   1479934 Hz,    472934 insns/sec: rip 00007f8f6e4915c0
+Completed      35652000 cycles,      13145347 commits:   1487445 Hz,    471939 insns/sec: rip 00007f8f6e491531
+Completed      35950000 cycles,      13240698 commits:   1485572 Hz,    475338 insns/sec: rip 00007f8f6e491623
+Completed      36248000 cycles,      13335255 commits:   1487142 Hz,    471878 insns/sec: rip 00000000004155e3
+Completed      36544000 cycles,      13429646 commits:   1477288 Hz,    471090 insns/sec: rip 00007f8f6e4915bb
+Completed      36842000 cycles,      13524412 commits:   1487075 Hz,    472899 insns/sec: rip 00007f8f6e491531
+Completed      37140000 cycles,      13619318 commits:   1489502 Hz,    474371 insns/sec: rip 0000000000415608
+Completed      37439000 cycles,      13714753 commits:   1494866 Hz,    477132 insns/sec: rip 00007f8f6e491616
+Completed      37736000 cycles,      13809388 commits:   1482018 Hz,    472224 insns/sec: rip 00007f8f6e4913fb
+Completed      38034000 cycles,      13904435 commits:   1489307 Hz,    475014 insns/sec: rip 00007f8f6e491f22
+Completed      38332000 cycles,      13999302 commits:   1489165 Hz,    474069 insns/sec: rip 00007f8f6e49160d
+Completed      38631000 cycles,      14094807 commits:   1490423 Hz,    476063 insns/sec: rip 00007f8f6e491eed
+Completed      38930000 cycles,      14189734 commits:   1490681 Hz,    473263 insns/sec: rip 0000000000415608
+Completed      39227000 cycles,      14284681 commits:   1482153 Hz,    473825 insns/sec: rip 00007f8f6e49144e
+Completed      39523000 cycles,      14378724 commits:   1478968 Hz,    469887 insns/sec: rip 0000000000418ad0
+Completed      39819000 cycles,      14473440 commits:   1475803 Hz,    472237 insns/sec: rip 00007f8f6e491541
+Completed      40117000 cycles,      14567868 commits:   1486504 Hz,    471032 insns/sec: rip 00007f8f6e491eed
+Completed      40412000 cycles,      14662122 commits:   1474895 Hz,    471236 insns/sec: rip 00007f8f6e491497
+Completed      40709000 cycles,      14756119 commits:   1480940 Hz,    468700 insns/sec: rip 0000000000417d10
+Completed      41004000 cycles,      14849913 commits:   1474154 Hz,    468701 insns/sec: rip 0000000000401590
+Completed      41300000 cycles,      14944167 commits:   1477109 Hz,    470349 insns/sec: rip 00007f8f6e491ee8
+Completed      41596000 cycles,      15038192 commits:   1478373 Hz,    469608 insns/sec: rip 00007f8f6e491603
+Completed      41892000 cycles,      15132763 commits:   1476025 Hz,    471585 insns/sec: rip 00007f8f6e49161a
+Completed      42187000 cycles,      15225028 commits:   1471838 Hz,    460336 insns/sec: rip 00007f8f6e490721
+Completed      42480000 cycles,      15318185 commits:   1464939 Hz,    465765 insns/sec: rip 00007f8f6e491526
+Completed      42775000 cycles,      15412233 commits:   1474816 Hz,    470181 insns/sec: rip 00007f8f6e491400
+Completed      43071000 cycles,      15506052 commits:   1474318 Hz,    467294 insns/sec: rip 00007f8f6e49153d
+Completed      43366000 cycles,      15600429 commits:   1473009 Hz,    471248 insns/sec: rip 00007f8f6e491531
+Completed      43663000 cycles,      15694785 commits:   1483052 Hz,    471161 insns/sec: rip 00007f8f6e4914d8
+Completed      43959000 cycles,      15789475 commits:   1477330 Hz,    472595 insns/sec: rip 00007f8f6e491582
+Completed      44257000 cycles,      15884180 commits:   1487679 Hz,    472787 insns/sec: rip 00007f8f6e49154f
+Completed      44547000 cycles,      15976128 commits:   1449543 Hz,    459595 insns/sec: rip 00007f8f6e490709
+Completed      44845000 cycles,      16071211 commits:   1487857 Hz,    474731 insns/sec: rip 00007f8f6e491644
+Completed      45143000 cycles,      16165772 commits:   1489263 Hz,    472571 insns/sec: rip 00007f8f6e491541
+Completed      45441000 cycles,      16261060 commits:   1486505 Hz,    475322 insns/sec: rip 0000000000417cbb
+Completed      45741000 cycles,      16356343 commits:   1495589 Hz,    475014 insns/sec: rip 0000000000401600
+Completed      46039000 cycles,      16451425 commits:   1486831 Hz,    474399 insns/sec: rip 00007f8f6e4915e0
+Completed      46339000 cycles,      16546813 commits:   1496602 Hz,    475859 insns/sec: rip 00007f8f6e49161a
+Completed      46637000 cycles,      16642010 commits:   1486190 Hz,    474768 insns/sec: rip 00007f8f6e491439
+Completed      46934000 cycles,      16736827 commits:   1484595 Hz,    473955 insns/sec: rip 0000000000417cc2
+Completed      47232000 cycles,      16831792 commits:   1487506 Hz,    474030 insns/sec: rip 00007f8f6e4906ea
+Completed      47530000 cycles,      16927033 commits:   1489626 Hz,    476085 insns/sec: rip 00007f8f6e4a46c0
+Completed      47828000 cycles,      17021869 commits:   1489275 Hz,    473949 insns/sec: rip 00007f8f6e498a6a
+Completed      48125000 cycles,      17116782 commits:   1484530 Hz,    474415 insns/sec: rip 00007f8f6e491546
+Completed      48424000 cycles,      17211123 commits:   1489713 Hz,    470037 insns/sec: rip 00007f8f6e4a46c0
+Completed      48713000 cycles,      17301771 commits:   1440348 Hz,    451780 insns/sec: rip 00007f8f6e491531
+Completed      49005000 cycles,      17393179 commits:   1458490 Hz,    456567 insns/sec: rip 00007f8f6e4913fb
+Completed      49297000 cycles,      17484609 commits:   1459135 Hz,    456879 insns/sec: rip 00007f8f6e49146f
+Completed      49589000 cycles,      17575895 commits:   1455130 Hz,    454907 insns/sec: rip 00000000004155fb
+Completed      49880000 cycles,      17666930 commits:   1454427 Hz,    454995 insns/sec: rip 00007f8f6e4906fa
+Completed      50182000 cycles,      17757267 commits:   1509125 Hz,    451423 insns/sec: rip 00007f8f6e4a46cd
+Completed      50491000 cycles,      17849497 commits:   1544506 Hz,    461002 insns/sec: rip 00007f8f6e49160d
+Completed      50800000 cycles,      17942188 commits:   1540835 Hz,    462205 insns/sec: rip 00000000004190f4
+Completed      51102000 cycles,      18035558 commits:   1509217 Hz,    466608 insns/sec: rip 00007f8f6e4914e0
+Completed      51392000 cycles,      18130070 commits:   1448670 Hz,    472126 insns/sec: rip 00000000004323cd
+Completed      51655000 cycles,      18232390 commits:   1314831 Hz,    511534 insns/sec: rip 000000000040b8ca
+Completed      51874000 cycles,      18348023 commits:   1092801 Hz,    577003 insns/sec: rip 000000000040b7fd
+Completed      52089000 cycles,      18462860 commits:   1074066 Hz,    573686 insns/sec: rip 000000000040b8ca
+Completed      52309000 cycles,      18580526 commits:   1093771 Hz,    584998 insns/sec: rip ffffffff8115c6b2
+Completed      52524000 cycles,      18695266 commits:   1073088 Hz,    572680 insns/sec: rip 000000000040b8dd
+Completed      52742000 cycles,      18811691 commits:   1086560 Hz,    580288 insns/sec: rip ffffffff8112b066
+Completed      52961000 cycles,      18928330 commits:   1094074 Hz,    582702 insns/sec: rip 000000000040b86b
+Completed      53179000 cycles,      19044508 commits:   1088275 Hz,    579971 insns/sec: rip 000000000040b8ba
+Completed      53400000 cycles,      19162711 commits:   1100379 Hz,    588543 insns/sec: rip 000000000040b8a2
+Completed      53617000 cycles,      19278504 commits:   1083096 Hz,    577949 insns/sec: rip 000000000040b8c6
+Completed      53838000 cycles,      19396416 commits:   1101390 Hz,    587634 insns/sec: rip 000000000040b898
+Completed      54055000 cycles,      19512437 commits:   1084166 Hz,    579659 insns/sec: rip 000000000040b842
+Completed      54275000 cycles,      19630077 commits:   1098534 Hz,    587416 insns/sec: rip 000000000040b87a
+Completed      54493000 cycles,      19746036 commits:   1086150 Hz,    577747 insns/sec: rip 000000000040b83d
+Completed      54712000 cycles,      19863403 commits:   1091757 Hz,    585097 insns/sec: rip ffffffff8115e1bd
+Completed      54933000 cycles,      19981526 commits:   1104380 Hz,    590283 insns/sec: rip 000000000040b872
+Completed      55153000 cycles,      20098438 commits:   1096276 Hz,    582581 insns/sec: rip 000000000040b7f9
+Completed      55373000 cycles,      20215903 commits:   1095256 Hz,    584792 insns/sec: rip 000000000040b885
+Completed      55590000 cycles,      20331633 commits:   1083342 Hz,    577765 insns/sec: rip 000000000040b80a
+Completed      55811000 cycles,      20449789 commits:   1104628 Hz,    590581 insns/sec: rip 000000000040b8a7
+Completed      56021000 cycles,      20561906 commits:   1044851 Hz,    557836 insns/sec: rip 000000000040b7f0
+Completed      56242000 cycles,      20679709 commits:   1102139 Hz,    587490 insns/sec: rip 000000000040b806
+Completed      56462000 cycles,      20797206 commits:   1096103 Hz,    585404 insns/sec: rip 000000000040b954
+Completed      56679000 cycles,      20913485 commits:   1080709 Hz,    579096 insns/sec: rip ffffffff81116be0
+Completed      56898000 cycles,      21030401 commits:   1093888 Hz,    583986 insns/sec: rip 000000000040b806
+Completed      57117000 cycles,      21147058 commits:   1090932 Hz,    581118 insns/sec: rip 000000000040b8a7
+Completed      57337000 cycles,      21264532 commits:   1098983 Hz,    586827 insns/sec: rip 000000000040b86f
+Completed      57554000 cycles,      21380474 commits:   1081348 Hz,    577759 insns/sec: rip 000000000040b83d
+Completed      57775000 cycles,      21498372 commits:   1102861 Hz,    588349 insns/sec: rip 000000000040b7fd
+Completed      57991000 cycles,      21613750 commits:   1077290 Hz,    575442 insns/sec: rip 000000000040b8b0
+Completed      58212000 cycles,      21731982 commits:   1103030 Hz,    590106 insns/sec: rip 000000000040b7f5
+Completed      58427000 cycles,      21846482 commits:   1071480 Hz,    570625 insns/sec: rip 000000000040b80a
+Completed      58646000 cycles,      21963508 commits:   1093684 Hz,    584426 insns/sec: rip ffffffff815e0221
+Completed      58865000 cycles,      22080448 commits:   1093774 Hz,    584045 insns/sec: rip 000000000040b950
+Completed      59082000 cycles,      22196490 commits:   1084125 Hz,    579742 insns/sec: rip 000000000040b7f5
+Completed      59302000 cycles,      22313917 commits:   1095661 Hz,    584819 insns/sec: rip 000000000040b806
+Completed      59519000 cycles,      22429715 commits:   1081033 Hz,    576873 insns/sec: rip 000000000040b8ac
+Completed      59739000 cycles,      22547350 commits:   1098274 Hz,    587252 insns/sec: rip 000000000040b87a
+Completed      59956000 cycles,      22663087 commits:   1084605 Hz,    578474 insns/sec: rip 000000000040b8b0
+Completed      60176000 cycles,      22780420 commits:   1095782 Hz,    584415 insns/sec: rip 000000000040b8cf
+Completed      60393000 cycles,      22896371 commits:   1082568 Hz,    578455 insns/sec: rip 000000000040b828
+Completed      60611000 cycles,      23012633 commits:   1087660 Hz,    580062 insns/sec: rip ffffffff8115f868
+Completed      60832000 cycles,      23130588 commits:   1102279 Hz,    588323 insns/sec: rip 000000000040b7fd
+Completed      61048000 cycles,      23245734 commits:   1077262 Hz,    574270 insns/sec: rip 000000000040b806
+Completed      61268000 cycles,      23363124 commits:   1097249 Hz,    585482 insns/sec: rip 000000000040b86b
+Completed      61481000 cycles,      23476957 commits:   1061208 Hz,    567138 insns/sec: rip 000000000040b86f
+Completed      61702000 cycles,      23594764 commits:   1103201 Hz,    588076 insns/sec: rip 000000000040b87a
+Completed      61920000 cycles,      23711177 commits:   1087184 Hz,    580561 insns/sec: rip 000000000040b8c1
+Completed      62141000 cycles,      23829272 commits:   1103761 Hz,    589813 insns/sec: rip 000000000040b828
+Completed      62359000 cycles,      23945282 commits:   1088153 Hz,    579067 insns/sec: rip 000000000040b8d5
+Completed      62578000 cycles,      24062426 commits:   1093325 Hz,    584824 insns/sec: rip ffffffff8115c491
+Completed      62796000 cycles,      24178747 commits:   1089570 Hz,    581375 insns/sec: rip 000000000040b7f9
+Completed      63013000 cycles,      24294426 commits:   1084480 Hz,    578118 insns/sec: rip 000000000040b8b0
+Completed      63234000 cycles,      24412508 commits:   1100051 Hz,    587765 insns/sec: rip 000000000040b8c1
+Completed      63447000 cycles,      24526177 commits:   1061821 Hz,    566648 insns/sec: rip 000000000040b866
+Completed      63655000 cycles,      24637249 commits:   1038551 Hz,    554586 insns/sec: rip 000000000040b81b
+Completed      63872000 cycles,      24753028 commits:   1083716 Hz,    578209 insns/sec: rip 000000000040b7f5
+Completed      64093000 cycles,      24871139 commits:   1100618 Hz,    588213 insns/sec: rip 000000000040b828
+Completed      64311000 cycles,      24987374 commits:   1084406 Hz,    578192 insns/sec: rip 000000000040b84c
+Completed      64531000 cycles,      25105177 commits:   1099834 Hz,    588926 insns/sec: rip 000000000040b8ba
+Completed      64759000 cycles,      25214074 commits:   1138869 Hz,    543945 insns/sec: rip 0000000000432464
+Completed      65057000 cycles,      25325199 commits:   1484893 Hz,    553720 insns/sec: rip 00007f8f6e16bb28
+Completed      65291000 cycles,      25417248 commits:   1166453 Hz,    458850 insns/sec: rip 000000000040b86b
+Completed      65512000 cycles,      25533830 commits:   1103106 Hz,    581910 insns/sec: rip 000000000040b954
+Completed      65731000 cycles,      25649348 commits:   1090283 Hz,    575102 insns/sec: rip 000000000040b8b5
+Completed      65951000 cycles,      25765910 commits:   1097987 Hz,    581743 insns/sec: rip 000000000040b87a
+Completed      66173000 cycles,      25883319 commits:   1105623 Hz,    584730 insns/sec: rip 000000000040b8a2
+Completed      66392000 cycles,      26000395 commits:   1092606 Hz,    584100 insns/sec: rip 000000000040b851
+Completed      66613000 cycles,      26118234 commits:   1103290 Hz,    588283 insns/sec: rip 000000000040b8e0
+Completed      66834000 cycles,      26236364 commits:   1103909 Hz,    590067 insns/sec: rip 000000000040b87a
+Completed      67055000 cycles,      26354126 commits:   1101263 Hz,    586818 insns/sec: rip 000000000040b8ba
+Completed      67277000 cycles,      26471810 commits:   1107767 Hz,    587236 insns/sec: rip 000000000040b8b5
+Completed      67499000 cycles,      26587733 commits:   1108085 Hz,    578615 insns/sec: rip 000000000040b954
+Completed      67720000 cycles,      26705136 commits:   1100295 Hz,    584515 insns/sec: rip 000000000040b81f
+Completed      67942000 cycles,      26822557 commits:   1107293 Hz,    585673 insns/sec: rip 000000000040b8b0
+Completed      68162000 cycles,      26939867 commits:   1098897 Hz,    585962 insns/sec: rip 000000000040b848
+Completed      68382000 cycles,      27057333 commits:   1098135 Hz,    586334 insns/sec: rip 000000000040b892
+Completed      68605000 cycles,      27173817 commits:   1114677 Hz,    582251 insns/sec: rip 000000000040b82c
+Completed      68822000 cycles,      27288742 commits:   1084415 Hz,    574315 insns/sec: rip 000000000040b856
+Completed      69038000 cycles,      27402147 commits:   1076520 Hz,    565198 insns/sec: rip 000000000040b7f5
+Completed      69256000 cycles,      27517749 commits:   1087905 Hz,    576899 insns/sec: rip 000000000040b8b0
+Completed      69477000 cycles,      27634626 commits:   1103485 Hz,    583584 insns/sec: rip 000000000040b7f5
+Completed      69699000 cycles,      27750866 commits:   1109393 Hz,    580882 insns/sec: rip 000000000040b881
+Completed      69932000 cycles,      27863318 commits:   1161353 Hz,    560500 insns/sec: rip 000000000040b86b
+Completed      70156000 cycles,      27981481 commits:   1116443 Hz,    588938 insns/sec: rip 000000000040b88f
+Completed      70380000 cycles,      28101412 commits:   1119370 Hz,    599318 insns/sec: rip 000000000040b8ac
+Completed      70606000 cycles,      28220110 commits:   1127679 Hz,    592271 insns/sec: rip 000000000040b8d9
+Completed      70830000 cycles,      28338865 commits:   1116332 Hz,    591830 insns/sec: rip 000000000040b80a
+Completed      71051000 cycles,      28456432 commits:   1102785 Hz,    586656 insns/sec: rip 000000000040b817
+Completed      71273000 cycles,      28575289 commits:   1107728 Hz,    593068 insns/sec: rip 000000000040b8ca
+Completed      71497000 cycles,      28695170 commits:   1115392 Hz,    596939 insns/sec: rip 000000000040b8e7
+Completed      71721000 cycles,      28814221 commits:   1115744 Hz,    592993 insns/sec: rip 000000000040b7f9
+Completed      71945000 cycles,      28934022 commits:   1117576 Hz,    597708 insns/sec: rip 000000000040b8d5
+Completed      72169000 cycles,      29053175 commits:   1117143 Hz,    594245 insns/sec: rip 000000000040b8a7
+Completed      72396000 cycles,      29171795 commits:   1130669 Hz,    590836 insns/sec: rip 000000000040b86b
+Completed      72619000 cycles,      29291136 commits:   1113154 Hz,    595717 insns/sec: rip 000000000040b86f
+Completed      72843000 cycles,      29410019 commits:   1118214 Hz,    593467 insns/sec: rip 000000000040b8ba
+Completed      73067000 cycles,      29528647 commits:   1118857 Hz,    592535 insns/sec: rip 000000000040b8c1
+Completed      73289000 cycles,      29647337 commits:   1107690 Hz,    592215 insns/sec: rip 000000000040b8d9
+Completed      73512000 cycles,      29766581 commits:   1112337 Hz,    594796 insns/sec: rip 000000000040b851
+Completed      73738000 cycles,      29884912 commits:   1124502 Hz,    588776 insns/sec: rip 000000000040b851
+Completed      73961000 cycles,      30004079 commits:   1114252 Hz,    595435 insns/sec: rip 000000000040b87e
+Completed      74181000 cycles,      30121757 commits:   1098267 Hz,    587463 insns/sec: rip 000000000040b86f
+Completed      74405000 cycles,      30241597 commits:   1118697 Hz,    598502 insns/sec: rip 000000000040b802
+Completed      74630000 cycles,      30360577 commits:   1123122 Hz,    593907 insns/sec: rip 000000000040b802
+Completed      74859000 cycles,      30479014 commits:   1140234 Hz,    589720 insns/sec: rip 000000000040b8ca
+Completed      75082000 cycles,      30598444 commits:   1113465 Hz,    596328 insns/sec: rip 000000000040b86f
+Completed      75306000 cycles,      30718317 commits:   1117086 Hz,    597805 insns/sec: rip 000000000040b88f
+Completed      75531000 cycles,      30837940 commits:   1121014 Hz,    595995 insns/sec: rip 000000000040b876
+Completed      75761000 cycles,      30954379 commits:   1148621 Hz,    581496 insns/sec: rip 000000000040b866
+Completed      75990000 cycles,      31072321 commits:   1141346 Hz,    587828 insns/sec: rip 000000000040b8ca
+Completed      76220000 cycles,      31190176 commits:   1146643 Hz,    587555 insns/sec: rip 000000000040b8ba
+Completed      76450000 cycles,      31307991 commits:   1146713 Hz,    587391 insns/sec: rip 000000000040b7fd
+Completed      76672000 cycles,      31426684 commits:   1106645 Hz,    591671 insns/sec: rip 000000000040b961
+Completed      76897000 cycles,      31546905 commits:   1123475 Hz,    600290 insns/sec: rip 000000000040b828
+Completed      77121000 cycles,      31665128 commits:   1118556 Hz,    590352 insns/sec: rip 000000000040b961
+Completed      77346000 cycles,      31781267 commits:   1120272 Hz,    578254 insns/sec: rip 000000000040b81f
+Completed      77559000 cycles,      31894680 commits:   1064929 Hz,    567027 insns/sec: rip 000000000040b861
+Completed      77779000 cycles,      32012003 commits:   1096086 Hz,    584528 insns/sec: rip 000000000040b86f
+Completed      77995000 cycles,      32127082 commits:   1079390 Hz,    575070 insns/sec: rip 000000000040b95a
+Completed      78216000 cycles,      32244971 commits:   1104005 Hz,    588914 insns/sec: rip 000000000040b7f9
+Completed      78435000 cycles,      32361402 commits:   1094975 Hz,    582141 insns/sec: rip 000000000040b86b
+Completed      78657000 cycles,      32480173 commits:   1106130 Hz,    591784 insns/sec: rip ffffffff81111f9a
+Completed      78878000 cycles,      32597611 commits:   1102306 Hz,    585758 insns/sec: rip 000000000040b8a7
+Completed      79098000 cycles,      32714770 commits:   1096545 Hz,    583955 insns/sec: rip 000000000040b802
+Completed      79321000 cycles,      32833910 commits:   1110017 Hz,    593037 insns/sec: rip 000000000040b8a2
+Completed      79541000 cycles,      32950714 commits:   1097278 Hz,    582575 insns/sec: rip 000000000040b872
+Completed      79762000 cycles,      33068240 commits:   1101295 Hz,    585660 insns/sec: rip 000000000040b8a2
+Completed      79984000 cycles,      33186614 commits:   1105517 Hz,    589479 insns/sec: rip 000000000040b8a2
+Completed      80206000 cycles,      33304689 commits:   1108703 Hz,    589685 insns/sec: rip 000000000040b954
+Completed      80429000 cycles,      33423178 commits:   1109977 Hz,    589776 insns/sec: rip ffffffff8113018c
+Completed      80648000 cycles,      33540216 commits:   1092401 Hz,    583801 insns/sec: rip 000000000040b954
+Completed      80869000 cycles,      33657618 commits:   1104482 Hz,    586735 insns/sec: rip 000000000040b8ca
+Completed      81092000 cycles,      33776758 commits:   1111697 Hz,    593935 insns/sec: rip 000000000040b8c6
+Completed      81313000 cycles,      33894298 commits:   1102901 Hz,    586583 insns/sec: rip 000000000040b881
+Completed      81532000 cycles,      34011270 commits:   1092800 Hz,    583684 insns/sec: rip 000000000040b872
+Completed      81754000 cycles,      34129521 commits:   1107272 Hz,    589802 insns/sec: rip 000000000040b8a7
+Completed      81972000 cycles,      34245547 commits:   1089587 Hz,    579910 insns/sec: rip 000000000040b866
+Completed      82194000 cycles,      34363815 commits:   1108583 Hz,    590585 insns/sec: rip 000000000040b7f9
+Completed      82413000 cycles,      34480527 commits:   1093169 Hz,    582584 insns/sec: rip 000000000040b8ac
+Completed      82632000 cycles,      34597149 commits:   1094193 Hz,    582680 insns/sec: rip 000000000040b898
+Completed      82853000 cycles,      34715053 commits:   1104511 Hz,    589259 insns/sec: rip 000000000040b86b
+Completed      83074000 cycles,      34832642 commits:   1103822 Hz,    587318 insns/sec: rip 000000000040b86b
+Completed      83295000 cycles,      34950710 commits:   1103986 Hz,    589798 insns/sec: rip ffffffff812e3205
+Completed      83516000 cycles,      35068584 commits:   1102683 Hz,    588134 insns/sec: rip 000000000040b872
+Completed      83736000 cycles,      35185628 commits:   1095485 Hz,    582818 insns/sec: rip 000000000040b88b
+Completed      83957000 cycles,      35303342 commits:   1103446 Hz,    587742 insns/sec: rip 000000000040b806
+Completed      84177000 cycles,      35420166 commits:   1098067 Hz,    583093 insns/sec: rip 000000000040b828
+Completed      84397000 cycles,      35537988 commits:   1099775 Hz,    588989 insns/sec: rip ffffffff812e3215
+Completed      84617000 cycles,      35654914 commits:   1097410 Hz,    583253 insns/sec: rip 000000000040b8a2
+Completed      84838000 cycles,      35772391 commits:   1103203 Hz,    586430 insns/sec: rip 000000000040b861
+Completed      85059000 cycles,      35890169 commits:   1104434 Hz,    588588 insns/sec: rip 000000000040b86b
+Completed      85279000 cycles,      36007777 commits:   1097149 Hz,    586516 insns/sec: rip 000000000040b958
+Completed      85497000 cycles,      36123479 commits:   1087281 Hz,    577066 insns/sec: rip ffffffff812e3217
+Completed      85718000 cycles,      36240987 commits:   1104569 Hz,    587311 insns/sec: rip 000000000040b806
+Completed      85936000 cycles,      36357304 commits:   1089854 Hz,    581507 insns/sec: rip 000000000040b8ac
+Completed      86158000 cycles,      36475786 commits:   1108261 Hz,    591482 insns/sec: rip 000000000040b82c
+Completed      86377000 cycles,      36591887 commits:   1090101 Hz,    577907 insns/sec: rip 000000000040b861
+Completed      86596000 cycles,      36708561 commits:   1089445 Hz,    580410 insns/sec: rip ffffffff8115e1f6
+Completed      86818000 cycles,      36826670 commits:   1107033 Hz,    588966 insns/sec: rip 000000000040b958
+Completed      87037000 cycles,      36943273 commits:   1091071 Hz,    580923 insns/sec: rip 000000000040b88f
+Completed      87258000 cycles,      37061187 commits:   1100423 Hz,    587128 insns/sec: rip 000000000040b8dd
+Completed      87478000 cycles,      37178190 commits:   1095507 Hz,    582625 insns/sec: rip 000000000040b876
+Completed      87697000 cycles,      37295099 commits:   1091464 Hz,    582657 insns/sec: rip ffffffff8112567e
+Completed      87917000 cycles,      37412133 commits:   1099758 Hz,    585041 insns/sec: rip 000000000040b86b
+Completed      88140000 cycles,      37528277 commits:   1114217 Hz,    580312 insns/sec: rip 000000000040b876
+Completed      88424000 cycles,      37641958 commits:   1417593 Hz,    567441 insns/sec: rip 0000000000432a80
+Completed      88729000 cycles,      37724796 commits:   1522472 Hz,    413503 insns/sec: rip ffffffff81038c4c
+Completed      88995000 cycles,      37806663 commits:   1326604 Hz,    408289 insns/sec: rip 00007f8f6e70c2fa
+Completed      89285000 cycles,      37876128 commits:   1449539 Hz,    347214 insns/sec: rip ffffffff812de70d
+Completed      89542000 cycles,      37935742 commits:   1284881 Hz,    298042 insns/sec: rip ffffffff81087201
+Completed      89832000 cycles,      38019887 commits:   1448935 Hz,    420416 insns/sec: rip 00007f8f6e20e3fc
+Completed      90102000 cycles,      38124040 commits:   1349540 Hz,    520587 insns/sec: rip 00007f8f6e20e404
+Completed      90331000 cycles,      38244467 commits:   1143935 Hz,    601575 insns/sec: rip ffffffff81383a40
+Completed      90539000 cycles,      38352997 commits:   1037903 Hz,    541556 insns/sec: rip ffffffff81327350
+Completed      90761000 cycles,      38470333 commits:   1108238 Hz,    585748 insns/sec: rip ffffffff8139a63b
+Completed      91005000 cycles,      38563277 commits:   1218453 Hz,    464130 insns/sec: rip ffffffff815dc4e9
+Completed      91222000 cycles,      38686567 commits:   1082273 Hz,    614900 insns/sec: rip ffffffff8139360e
+Completed      91427000 cycles,      38812280 commits:   1024945 Hz,    628531 insns/sec: rip ffffffff813935c9
+Completed      91631000 cycles,      38938756 commits:   1018899 Hz,    631697 insns/sec: rip ffffffff815e068c
+Completed      91837000 cycles,      39065152 commits:   1027233 Hz,    630282 insns/sec: rip ffffffff8139a3fc
+Completed      92043000 cycles,      39192684 commits:   1026692 Hz,    635612 insns/sec: rip ffffffff815e06cb
+Completed      92248000 cycles,      39319950 commits:   1022841 Hz,    634990 insns/sec: rip ffffffff813839c5
+Completed      92454000 cycles,      39443542 commits:   1025358 Hz,    615175 insns/sec: rip ffffffff81065f00
+Completed      92660000 cycles,      39570731 commits:   1025563 Hz,    633205 insns/sec: rip ffffffff813935dd
+Completed      92954000 cycles,      39647624 commits:   1467402 Hz,    383785 insns/sec: rip ffffffff810559c6
+Completed      93201000 cycles,      39706722 commits:   1227129 Hz,    293606 insns/sec: rip ffffffff812e381f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      93464000 cycles,      39780483 commits:   1309925 Hz,    367381 insns/sec: rip ffffffff8116c137
+Completed      93689000 cycles,      39874417 commits:   1123812 Hz,    469174 insns/sec: rip ffffffff81132830
+Completed      93956000 cycles,      39979007 commits:   1330512 Hz,    521192 insns/sec: rip ffffffff8108c1e0
+Completed      94196000 cycles,      40056907 commits:   1197483 Hz,    388683 insns/sec: rip 00007f1895ed5fd1
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      94490000 cycles,      40136161 commits:   1469000 Hz,    396000 insns/sec: rip 00007f1895ecfef8
+Completed      94720000 cycles,      40230251 commits:   1145531 Hz,    468622 insns/sec: rip 00007f1895c55429
+Invalid opcode at 0x7f1895edae09: split_invalid_basic_blocks 0, first_insn_in_bb? 1
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      94937000 cycles,      40323177 commits:   1084603 Hz,    464460 insns/sec: rip 00007f1895bbca6b
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      95116000 cycles,      40408875 commits:    892868 Hz,    427469 insns/sec: rip ffffffff81038bc8
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      95325000 cycles,      40488178 commits:   1040520 Hz,    394815 insns/sec: rip ffffffff812e33a2
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      95535000 cycles,      40565204 commits:   1046504 Hz,    383847 insns/sec: rip ffffffff8117c6f7
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      95741000 cycles,      40642793 commits:   1025766 Hz,    386350 insns/sec: rip ffffffff812e33a2
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      95955000 cycles,      40720283 commits:   1068308 Hz,    386837 insns/sec: rip ffffffff81091120
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      96150000 cycles,      40801207 commits:    973057 Hz,    403814 insns/sec: rip ffffffff815d9cff
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      96339000 cycles,      40885186 commits:    941608 Hz,    418388 insns/sec: rip ffffffff8100a6d8
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      96534000 cycles,      40967373 commits:    971650 Hz,    409523 insns/sec: rip ffffffff8119ce59
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      96724000 cycles,      41050808 commits:    946281 Hz,    415542 insns/sec: rip ffffffff8116cb8c
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      96925000 cycles,      41132557 commits:   1004234 Hz,    408433 insns/sec: rip ffffffff81056445
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      97096000 cycles,      41220195 commits:    851615 Hz,    436455 insns/sec: rip ffffffff8119ce09
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      97269000 cycles,      41309111 commits:    862624 Hz,    443358 insns/sec: rip ffffffff81056acc
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      97442000 cycles,      41397906 commits:    864710 Hz,    443826 insns/sec: rip ffffffff812dea46
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      97615000 cycles,      41485937 commits:    861297 Hz,    438271 insns/sec: rip ffffffff815da1b7
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      97788000 cycles,      41575403 commits:    860966 Hz,    445243 insns/sec: rip ffffffff8115c6ab
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      97961000 cycles,      41664682 commits:    861692 Hz,    444688 insns/sec: rip ffffffff812e33aa
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      98133000 cycles,      41753182 commits:    857379 Hz,    441151 insns/sec: rip ffffffff8104e504
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      98305000 cycles,      41842178 commits:    858167 Hz,    444031 insns/sec: rip ffffffff812e320d
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      98475000 cycles,      41930018 commits:    845344 Hz,    436794 insns/sec: rip ffffffff815e0347
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      98649000 cycles,      42019159 commits:    867284 Hz,    444313 insns/sec: rip ffffffff810524f8
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      98842000 cycles,      42102208 commits:    964100 Hz,    414857 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      99054000 cycles,      42180247 commits:   1059305 Hz,    389939 insns/sec: rip ffffffff810565f0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      99258000 cycles,      42260952 commits:   1017040 Hz,    402354 insns/sec: rip 00007f1895bbca30
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      99467000 cycles,      42339853 commits:   1039349 Hz,    392371 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      99673000 cycles,      42420353 commits:   1028482 Hz,    401907 insns/sec: rip ffffffff81163a50
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed      99884000 cycles,      42499857 commits:   1052281 Hz,    396495 insns/sec: rip 00007f1895bbca41
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     100090000 cycles,      42577948 commits:   1029425 Hz,    390237 insns/sec: rip ffffffff815d9d6f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     100298000 cycles,      42657283 commits:   1037516 Hz,    395727 insns/sec: rip ffffffff81130851
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     100503000 cycles,      42738008 commits:   1018881 Hz,    401215 insns/sec: rip ffffffff810559f1
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     100709000 cycles,      42817326 commits:   1028851 Hz,    396147 insns/sec: rip ffffffff8115dfcf
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     100920000 cycles,      42896968 commits:   1052334 Hz,    397204 insns/sec: rip ffffffff81277f43
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     101127000 cycles,      42978196 commits:   1033465 Hz,    405537 insns/sec: rip ffffffff812e33a2
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     101341000 cycles,      43058300 commits:   1068395 Hz,    399919 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     101547000 cycles,      43140406 commits:   1024584 Hz,    408371 insns/sec: rip ffffffff8100a8e8
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     101762000 cycles,      43220994 commits:   1070712 Hz,    401332 insns/sec: rip ffffffff8119ce75
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     101976000 cycles,      43302408 commits:   1064340 Hz,    404916 insns/sec: rip ffffffff8116d36e
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     102191000 cycles,      43383307 commits:   1073278 Hz,    403847 insns/sec: rip ffffffff81050fa0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     102407000 cycles,      43462719 commits:   1078697 Hz,    396581 insns/sec: rip ffffffff8100a67f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     102618000 cycles,      43543702 commits:   1053674 Hz,    404406 insns/sec: rip ffffffff81125690
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     102830000 cycles,      43624343 commits:   1058573 Hz,    402662 insns/sec: rip 00007f1895bbca35
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     103034000 cycles,      43706820 commits:   1014577 Hz,    410192 insns/sec: rip ffffffff8105355e
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     103249000 cycles,      43787440 commits:   1073761 Hz,    402635 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     103454000 cycles,      43867358 commits:   1023763 Hz,    399107 insns/sec: rip ffffffff81137d2e
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     103665000 cycles,      43947497 commits:   1052625 Hz,    399792 insns/sec: rip ffffffff812e33b9
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     103880000 cycles,      44029122 commits:   1071904 Hz,    406949 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     104089000 cycles,      44109238 commits:   1044758 Hz,    400487 insns/sec: rip ffffffff812e33d5
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     104307000 cycles,      44188052 commits:   1089579 Hz,    393918 insns/sec: rip ffffffff81055d28
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     104519000 cycles,      44270450 commits:   1053456 Hz,    409446 insns/sec: rip ffffffff812e3215
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     104727000 cycles,      44351945 commits:   1036907 Hz,    406263 insns/sec: rip ffffffff8119cdf8
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     104935000 cycles,      44434196 commits:   1038422 Hz,    410631 insns/sec: rip ffffffff815d9d40
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     105148000 cycles,      44514450 commits:   1060393 Hz,    399534 insns/sec: rip ffffffff81056430
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     105359000 cycles,      44594697 commits:   1049851 Hz,    399276 insns/sec: rip ffffffff812e33dd
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     105574000 cycles,      44675523 commits:   1073206 Hz,    403455 insns/sec: rip 00007f1895bbca72
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     105768000 cycles,      44760181 commits:    967274 Hz,    422100 insns/sec: rip ffffffff8104f053
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     105945000 cycles,      44848762 commits:    884452 Hz,    442630 insns/sec: rip ffffffff8108dbf7
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     106161000 cycles,      44929768 commits:   1073681 Hz,    402660 insns/sec: rip ffffffff81053544
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     106372000 cycles,      45009747 commits:   1054906 Hz,    399859 insns/sec: rip ffffffff8115e054
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     106581000 cycles,      45091217 commits:   1044782 Hz,    407265 insns/sec: rip 00007f1895bbca41
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     106795000 cycles,      45172022 commits:   1067290 Hz,    403001 insns/sec: rip ffffffff81014025
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     107010000 cycles,      45250934 commits:   1074812 Hz,    394491 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     107225000 cycles,      45331760 commits:   1072361 Hz,    403137 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     107439000 cycles,      45411173 commits:   1063719 Hz,    394734 insns/sec: rip ffffffff812e31f5
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     107652000 cycles,      45490822 commits:   1063280 Hz,    397601 insns/sec: rip ffffffff812e33c1
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     107868000 cycles,      45572236 commits:   1076881 Hz,    405894 insns/sec: rip ffffffff812e33b5
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     108081000 cycles,      45652418 commits:   1064051 Hz,    400553 insns/sec: rip ffffffff812debc9
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     108296000 cycles,      45733548 commits:   1071816 Hz,    404448 insns/sec: rip ffffffff8106b1d6
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     108509000 cycles,      45812066 commits:   1064537 Hz,    392419 insns/sec: rip 00000000004009ed
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     108718000 cycles,      45892598 commits:   1041695 Hz,    401386 insns/sec: rip ffffffff8119d0c0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     108933000 cycles,      45973554 commits:   1071187 Hz,    403344 insns/sec: rip 00007f1895bbca35
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     109145000 cycles,      46052963 commits:   1059076 Hz,    396699 insns/sec: rip ffffffff815dc5a8
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     109361000 cycles,      46131678 commits:   1079775 Hz,    393493 insns/sec: rip ffffffff812e33aa
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     109573000 cycles,      46212848 commits:   1057157 Hz,    404761 insns/sec: rip ffffffff810d7a9b
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     109785000 cycles,      46291813 commits:   1057592 Hz,    393928 insns/sec: rip ffffffff812e31fd
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     109999000 cycles,      46372500 commits:   1064746 Hz,    401454 insns/sec: rip ffffffff8116d16d
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     110214000 cycles,      46452987 commits:   1072860 Hz,    401634 insns/sec: rip 00000000004007b8
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     110429000 cycles,      46532814 commits:   1068009 Hz,    396539 insns/sec: rip ffffffff815da09c
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     110645000 cycles,      46612589 commits:   1079072 Hz,    398532 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     110858000 cycles,      46691290 commits:   1060620 Hz,    391886 insns/sec: rip ffffffff810567a7
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     111070000 cycles,      46770674 commits:   1055087 Hz,    395080 insns/sec: rip ffffffff8108c1e0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     111284000 cycles,      46850993 commits:   1064223 Hz,    399426 insns/sec: rip ffffffff8116d0d0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     111496000 cycles,      46931731 commits:   1054574 Hz,    401623 insns/sec: rip ffffffff8105f068
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     111708000 cycles,      47010082 commits:   1059751 Hz,    391663 insns/sec: rip ffffffff811028e4
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     111921000 cycles,      47090388 commits:   1060770 Hz,    399935 insns/sec: rip ffffffff8116ccdb
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     112141000 cycles,      47168256 commits:   1095457 Hz,    387732 insns/sec: rip ffffffff81130340
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     112354000 cycles,      47248299 commits:   1061170 Hz,    398775 insns/sec: rip ffffffff8104ec5d
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     112566000 cycles,      47327173 commits:   1053424 Hz,    391923 insns/sec: rip ffffffff812e31f0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     112777000 cycles,      47407039 commits:   1051496 Hz,    398003 insns/sec: rip ffffffff8100bfdc
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     112989000 cycles,      47487378 commits:   1057265 Hz,    400658 insns/sec: rip ffffffff811643c0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     113200000 cycles,      47566076 commits:   1054566 Hz,    393328 insns/sec: rip ffffffff81056953
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     113414000 cycles,      47644447 commits:   1068914 Hz,    391457 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     113628000 cycles,      47724439 commits:   1069051 Hz,    399605 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     113805000 cycles,      47811726 commits:    881098 Hz,    434510 insns/sec: rip ffffffff815d9fa3
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     113996000 cycles,      47896803 commits:    951603 Hz,    423872 insns/sec: rip ffffffff81116a9c
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     114209000 cycles,      47976286 commits:   1060303 Hz,    395662 insns/sec: rip ffffffff812e33e5
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     114421000 cycles,      48055587 commits:   1059077 Hz,    396159 insns/sec: rip ffffffff812e33ae
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     114634000 cycles,      48135584 commits:   1064932 Hz,    399959 insns/sec: rip ffffffff810569f6
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     114846000 cycles,      48213866 commits:   1058147 Hz,    390725 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     115065000 cycles,      48291522 commits:   1092457 Hz,    387378 insns/sec: rip ffffffff8106b209
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     115279000 cycles,      48371838 commits:   1067018 Hz,    400460 insns/sec: rip ffffffff8112e997
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     115490000 cycles,      48449679 commits:   1053418 Hz,    388621 insns/sec: rip ffffffff815e0247
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     115701000 cycles,      48527867 commits:   1051520 Hz,    389650 insns/sec: rip ffffffff815dcf8b
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     115915000 cycles,      48608115 commits:   1065116 Hz,    399408 insns/sec: rip ffffffff8119cfdf
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     116128000 cycles,      48687622 commits:   1064873 Hz,    397487 insns/sec: rip ffffffff8116d269
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     116338000 cycles,      48767163 commits:   1049030 Hz,    397337 insns/sec: rip ffffffff81164306
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     116550000 cycles,      48846087 commits:   1059785 Hz,    394540 insns/sec: rip ffffffff8105609d
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     116766000 cycles,      48924436 commits:   1078113 Hz,    391060 insns/sec: rip ffffffff812e33c1
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     116984000 cycles,      49004122 commits:   1088676 Hz,    397946 insns/sec: rip ffffffff812e339f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     117195000 cycles,      49082209 commits:   1052154 Hz,    389381 insns/sec: rip ffffffff8104df48
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     117406000 cycles,      49160631 commits:   1050025 Hz,    390261 insns/sec: rip ffffffff812e320d
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     117618000 cycles,      49240113 commits:   1054207 Hz,    395238 insns/sec: rip ffffffff81111c49
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     117828000 cycles,      49318260 commits:   1048993 Hz,    390360 insns/sec: rip 00007f1895bbca63
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     118040000 cycles,      49397288 commits:   1058996 Hz,    394765 insns/sec: rip 00007f1895c09340
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     118228000 cycles,      49482546 commits:    936247 Hz,    424588 insns/sec: rip ffffffff812e33c1
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     118399000 cycles,      49570159 commits:    852484 Hz,    436776 insns/sec: rip ffffffff8105348a
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     118571000 cycles,      49659245 commits:    859258 Hz,    445045 insns/sec: rip ffffffff81168e3a
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     118742000 cycles,      49747291 commits:    852214 Hz,    438795 insns/sec: rip ffffffff815e0165
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     118913000 cycles,      49835503 commits:    853291 Hz,    440178 insns/sec: rip ffffffff812e33dd
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     119093000 cycles,      49922329 commits:    898986 Hz,    433641 insns/sec: rip ffffffff8100bf8f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     119264000 cycles,      50010245 commits:    851622 Hz,    437843 insns/sec: rip ffffffff8100a8e6
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     119435000 cycles,      50098638 commits:    850101 Hz,    439432 insns/sec: rip ffffffff810564cb
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     119608000 cycles,      50187863 commits:    864462 Hz,    445847 insns/sec: rip ffffffff81130236
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     119780000 cycles,      50276811 commits:    858945 Hz,    444194 insns/sec: rip 00007f1895c09330
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     119977000 cycles,      50360355 commits:    983377 Hz,    417031 insns/sec: rip ffffffff8105f068
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     120157000 cycles,      50446234 commits:    896509 Hz,    427729 insns/sec: rip ffffffff815da087
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     120336000 cycles,      50532865 commits:    893543 Hz,    432450 insns/sec: rip ffffffff8104de44
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     120524000 cycles,      50617690 commits:    937164 Hz,    422845 insns/sec: rip ffffffff8100a836
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     120695000 cycles,      50705643 commits:    854811 Hz,    439668 insns/sec: rip ffffffff81165960
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     120876000 cycles,      50792129 commits:    900576 Hz,    430316 insns/sec: rip ffffffff8105efaf
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     121086000 cycles,      50870568 commits:   1045141 Hz,    390380 insns/sec: rip ffffffff812e33b1
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     121287000 cycles,      50948946 commits:   1004349 Hz,    391636 insns/sec: rip ffffffff8116d3ff
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     121452000 cycles,      51033429 commits:    823594 Hz,    421695 insns/sec: rip ffffffff81056a95
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     121618000 cycles,      51119328 commits:    827528 Hz,    428216 insns/sec: rip 00007f1895c09330
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     121785000 cycles,      51204972 commits:    832957 Hz,    427172 insns/sec: rip ffffffff8104b52e
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     121972000 cycles,      51285259 commits:    933732 Hz,    400890 insns/sec: rip 00007f1895bbca72
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     122142000 cycles,      51373230 commits:    846977 Hz,    438290 insns/sec: rip ffffffff81112821
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     122318000 cycles,      51457518 commits:    879406 Hz,    421155 insns/sec: rip 00007f1895bbca39
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     122563000 cycles,      51531435 commits:   1222706 Hz,    368893 insns/sec: rip ffffffff8112e379
+Completed     122815000 cycles,      51634789 commits:   1258346 Hz,    516091 insns/sec: rip ffffffff8115f893
+Completed     123052000 cycles,      51739503 commits:   1184303 Hz,    523262 insns/sec: rip ffffffff8115c4c8
+Completed     123319000 cycles,      51840840 commits:   1331644 Hz,    505411 insns/sec: rip ffffffff8115ce6c
+Completed     123538000 cycles,      51951611 commits:   1093999 Hz,    553349 insns/sec: rip ffffffff8112d683
+Completed     123750000 cycles,      52065490 commits:   1059490 Hz,    569121 insns/sec: rip ffffffff8111635f
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     124047000 cycles,      52140450 commits:   1484307 Hz,    374625 insns/sec: rip ffffffff811be348
+Completed     124411000 cycles,      52192670 commits:   1812902 Hz,    260081 insns/sec: rip 00007fae98ec3a68
+Completed     124654000 cycles,      52295084 commits:   1214268 Hz,    511761 insns/sec: rip 00007fae98f15705
+Completed     124866000 cycles,      52411715 commits:   1054334 Hz,    580038 insns/sec: rip ffffffff81044917
+Completed     125087000 cycles,      52540966 commits:   1103563 Hz,    645414 insns/sec: rip 00007fae98ec41b0
+Completed     125311000 cycles,      52655424 commits:   1119816 Hz,    572196 insns/sec: rip ffffffff8139a437
+Completed     125646000 cycles,      52709848 commits:   1673182 Hz,    271824 insns/sec: rip ffffffff8112dec1
+Completed     125916000 cycles,      52791423 commits:   1345971 Hz,    406657 insns/sec: rip ffffffff812e3253
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     126212000 cycles,      52858134 commits:   1475085 Hz,    332447 insns/sec: rip 0000000000442540
+Completed     126488000 cycles,      52922967 commits:   1379767 Hz,    324110 insns/sec: rip ffffffff810747c9
+Completed     126735000 cycles,      52979060 commits:   1231468 Hz,    279662 insns/sec: rip ffffffff812e493a
+Completed     126965000 cycles,      53095470 commits:   1148484 Hz,    581283 insns/sec: rip ffffffff81116f02
+Completed     127202000 cycles,      53191360 commits:   1183796 Hz,    478962 insns/sec: rip ffffffff815bed2e
+Completed     127464000 cycles,      53294393 commits:   1309085 Hz,    514805 insns/sec: rip ffffffff8115c65c
+Invalid opcode at 0xffffffff8103803b: split_invalid_basic_blocks 0, first_insn_in_bb? 0
+Completed     127717000 cycles,      53371071 commits:   1264005 Hz,    383088 insns/sec: rip 00007f4cf555f818
+Completed     128013000 cycles,      53451025 commits:   1479985 Hz,    399766 insns/sec: rip 00007f4cf555dee8
+Completed     128235000 cycles,      53530035 commits:   1109578 Hz,    394900 insns/sec: rip ffffffff8106dd00
+Command received: -stop 
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         enabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      60log.log
+  -loglevel     1
+  -startlog     10 M
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        60stats.stats
+  -yamlstats    60stats.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     3300 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      atom_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+
+Start logging at level 1 in cycle 128343173
+
+Stopped after 128349800 cycles, 53575822 instructions and 109 seconds of sim time (cycle/sec: 1177521 Hz, insns/sec: 491521, insns/cyc: 0.4174203777489330)
+Total Tags: atom_core,c6220-1.(none),2019-11-24,total
+Stats Summary:
+user.base_machine.atom_0.thread_0.commit.ipc = 0.429784
+kernel.base_machine.atom_0.thread_0.commit.ipc = 0.396912
+total.base_machine.atom_0.thread_0.commit.ipc = 0.417724
+Core dump received from VM is saved in hmmer_base.mars-core with signal 6
